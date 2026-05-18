@@ -6,20 +6,37 @@ export const staticPaths = async () => {
 }
 
 export const loader = async ({ params }) => {
+  const year = Number(params.year)
   const races = await loadJson(`data/races/${params.year}.json`)
-  return { year: Number(params.year), races }
+  // Per-round standings may not be synced for older Seasons — fall back
+  // to null and the page hides the chart.
+  let standings = null
+  try {
+    standings = await loadJson(`data/standings/${params.year}.json`)
+  } catch (err) {
+    if (err.code !== 'ENOENT') throw err
+  }
+  return { year, races, standings }
 }
 
 export default function Season({ data }) {
-  const { year, races } = data
+  const { year, races, standings } = data
   return (
     <div>
       <h1>{year} Season</h1>
       <p class="lead">
-        {races.length} {races.length === 1 ? 'Race' : 'Races'} this Season.
-        Click any Round for the full Race report.{' '}
+        {races.length} {races.length === 1 ? 'Race' : 'Races'} this Season.{' '}
         <a href="/seasons">↩ all Seasons</a>
       </p>
+
+      {standings && standings.rounds.length > 0 && (
+        <>
+          <h2>Championship arc</h2>
+          <championship-arc data={JSON.stringify(standings)}></championship-arc>
+        </>
+      )}
+
+      <h2>Race calendar</h2>
       <table class="list-table">
         <thead>
           <tr>

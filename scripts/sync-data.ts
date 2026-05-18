@@ -311,6 +311,11 @@ async function syncAllRaces(seasons: Season[]): Promise<void> {
 
 const RESULTS_SYNC_YEARS: number[] = [2024, 2025, 2026]
 
+// Years for which we sync per-round Driver standings — the data the
+// championship-arc chart on /seasons/[year] consumes. Heavier than the
+// final-only standings (one request per Round), so it's gated separately.
+const ROUND_STANDINGS_SYNC_YEARS: number[] = [2024, 2025, 2026]
+
 async function syncResultsForRace(year: number, round: number): Promise<boolean> {
   const raw = await fetchAll<any>(
     `${year}/${round}/results`,
@@ -362,6 +367,51 @@ async function loadRacesForSeason(year: number): Promise<Race[]> {
   } catch (err: any) {
     if (err.code === 'ENOENT') return []
     throw err
+  }
+}
+
+// ============================================================
+// Per-Round Driver Standings — one snapshot per (year, round) of the
+// Driver standings AFTER that Round. The championship-arc chart on
+// /seasons/[year] joins these into a cumulative-points curve.
+//
+// One file per Season: data/standings/<year>.json — `rounds[i]` is the
+// table after Round (i+1).
+// ============================================================
+
+async function syncRoundStandingsForYear(year: number): Promise<boolean> {
+  const races = await loadRacesForSeason(year)
+  if (races.length === 0) return false
+  const rounds = []
+  for (const race of races) {
+    // Skip future rounds — they have no standings yet, and the endpoint
+    // returns the most recent prior standings, which would duplicate.
+    const raw = await fetchPage(
+      `${year}/${race.round}/driverStandings`,
+      0,
+    )
+    const list = raw.MRData.StandingsTable.StandingsLists[0]
+    if (!list || Number(list.round) !== race.round) continue
+    rounds.push({
+      round: race.round,
+      drivers: list.DriverStandings.map((s: any) => ({
+        position: Number(s.position),
+        points: Number(s.points),
+        wins: Number(s.wins),
+        driverId: s.Driver.driverId,
+        constructorId:
+          s.Constructors?.[s.Constructors.length - 1]?.constructorId ?? null,
+      })),
+    })
+  }
+  return writeIfChanged(join(DATA_DIR, 'standings', `${year}.json`), { year, rounds })
+}
+
+async function syncAllRoundStandings(): Promise<void> {
+  for (const year of ROUND_STANDINGS_SYNC_YEARS) {
+    process.stdout.write(`  round-stand ${year} ... `)
+    const changed = await syncRoundStandingsForYear(year)
+    console.log(changed ? 'updated' : 'unchanged')
   }
 }
 
@@ -467,6 +517,9 @@ async function main() {
   }
   if (ONLY == null || ONLY === 'standings') {
     await syncCurrentStandings()
+  }
+  if (ONLY == null || ONLY === 'round-standings') {
+    await syncAllRoundStandings()
   }
   console.log('Done.')
 }
