@@ -6,7 +6,10 @@
   "description": "F1 stats dashboard built with @jjordy/rogue.",
   "packageManager": "pnpm@10.15.1",
   "pnpm": {
-    "onlyBuiltDependencies": []
+    "onlyBuiltDependencies": [],
+    "patchedDependencies": {
+      "@jjordy/rogue": "patches/@jjordy__rogue.patch"
+    }
   },
   "scripts": {
     "dev": "vite",

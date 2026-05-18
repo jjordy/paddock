@@ -1,0 +1,21 @@
+diff --git a/runtime/router.js b/runtime/router.js
+index f2ccadd3da853c41b9ff81de3b5a2f83d6b7c610..547412d2c4677b701aafc224a025119da8988236 100644
+--- a/runtime/router.js
++++ b/runtime/router.js
+@@ -183,9 +183,14 @@ export async function renderRoute(target, url, prefetchedData) {
+ // Either way: throws on non-2xx so renderRoute's catch can route to the
+ // error page.
+ async function fetchLoaderData(url, isStatic) {
++  // PADDOCK PATCH: re-apply BASE_URL. `url` arrives stripped of the base
++  // path (to match the manifest's pattern), but the network fetch needs
++  // the full path — under GH Pages' /paddock/, fetch('/data.json') 404s.
++  // Filed upstream as jjordy/rogue#60; remove this patch when fixed.
++  const based = withBase(url)
+   const fetchUrl = isStatic
+-    ? url.replace(/\/?$/, '/') + 'data.json'
+-    : url
++    ? based.replace(/\/?$/, '/') + 'data.json'
++    : based
+   const headers = isStatic ? {} : { accept: 'application/json' }
+   const res = await fetch(fetchUrl, { headers, credentials: 'same-origin' })
+   if (!res.ok) {
