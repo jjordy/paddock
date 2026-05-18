@@ -1,3 +1,70 @@
+/* ============================================================
+ * View Transitions — motorsport-flavored navigation animation.
+ *
+ * `@view-transition { navigation: auto }` opts every same-origin
+ * navigation into the View Transitions API; rogue 0.6.0's runtime
+ * tags each transition as `forward` or `back` so we can animate
+ * them asymmetrically — apex-out / apex-in, the new page sliding
+ * in from the direction of travel with a 2° skew to suggest speed.
+ *
+ * The `page-heading` shared-element name on every <h1> lets the
+ * browser interpolate position + size between the list-page heading
+ * (e.g. "Drivers") and the detail-page heading (e.g. "Jos Verstappen"),
+ * cross-fading the text content during the morph. Continuous, not
+ * jumpy.
+ *
+ * `safe-area`-conservative duration (220 ms) — sharp enough to feel
+ * like a car committing to the line, slow enough that the eye can
+ * follow the heading from one position to the next.
+ * ============================================================ */
+
+@view-transition { navigation: auto; }
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 220ms;
+  /* Brake → apex → accelerate. Snappy ease-out. */
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Forward (default) — old page slides off to the left and shears
+   slightly; new page enters from the right with the inverse shear. */
+::view-transition-old(root) { animation-name: paddock-out-fwd; }
+::view-transition-new(root) { animation-name: paddock-in-fwd; }
+
+@keyframes paddock-out-fwd {
+  to { opacity: 0; transform: translateX(-18px) skewX(-2deg); }
+}
+@keyframes paddock-in-fwd {
+  from { opacity: 0; transform: translateX(24px) skewX(-2deg); }
+}
+
+/* Back — mirror the motion so retracing a step actually FEELS like
+   a step backwards. Chrome 125+ honors the type tag; older browsers
+   silently fall back to the forward keyframes, which is fine. */
+:active-view-transition-type(back)::view-transition-old(root) {
+  animation-name: paddock-out-back;
+}
+:active-view-transition-type(back)::view-transition-new(root) {
+  animation-name: paddock-in-back;
+}
+
+@keyframes paddock-out-back {
+  to { opacity: 0; transform: translateX(18px) skewX(2deg); }
+}
+@keyframes paddock-in-back {
+  from { opacity: 0; transform: translateX(-24px) skewX(2deg); }
+}
+
+/* Respect users who turn off animation. */
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 1ms;
+    animation-name: none;
+  }
+}
+
 /* Classic motorsport palette: Ferrari red on warm white + black. */
 :root {
   --red: #e10600;
@@ -97,6 +164,9 @@ main h1 {
   letter-spacing: -.01em;
   margin: 0 0 12px;
   text-transform: uppercase;
+  /* Shared-element morph between pages: the browser interpolates
+     position + size as you navigate, content cross-fades through. */
+  view-transition-name: page-heading;
 }
 main h1::after {
   content: "";
