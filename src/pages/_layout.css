@@ -114,3 +114,71 @@ main h2 {
 main p { margin: .55em 0; }
 main p.lead { color: var(--grey); font-size: 16px; }
 main ul { padding-left: 1.2rem; }
+main main { padding: 0; } /* defensive — avoid nested-main double padding */
+
+/* ============================================================
+ * Index-page table — shared by /drivers, /teams, /seasons
+ * Classic motorsport scoreboard: ALL CAPS column headers in red on
+ * black, monospace numbers, thin rules.
+ * ============================================================ */
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 14px;
+}
+.list-table thead th {
+  background: var(--ink);
+  color: var(--paper);
+  text-align: left;
+  padding: 8px 12px;
+  font: 700 11px/1 ui-monospace, monospace;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  border-bottom: 3px solid var(--red);
+}
+.list-table tbody td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--paper-dim);
+}
+.list-table tbody tr:hover td { background: var(--paper-dim); }
+.list-table a { color: var(--ink); font-weight: 600; }
+.list-table a:hover { color: var(--red); }
+.list-table .num,
+.list-table .code {
+  font: 700 13px/1 ui-monospace, monospace;
+  color: var(--muted);
+  width: 1%;
+  white-space: nowrap;
+}
+.list-table .num { color: var(--red); }
+.list-table .meta { color: var(--muted); font-size: 13px; }
+
+/* ============================================================
+ * Stat grid — labelled key numbers in a row (career stats, etc.)
+ * ============================================================ */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 1px;
+  background: var(--paper-dim);
+  border-top: 3px solid var(--red);
+  border-bottom: 1px solid var(--paper-dim);
+  margin: 1.25rem 0;
+}
+.stat-grid .stat {
+  background: var(--paper);
+  padding: 14px 16px;
+}
+.stat-grid .stat-label {
+  font: 700 10px/1 ui-monospace, monospace;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.stat-grid .stat-value {
+  font: 800 22px/1 "Helvetica Neue", Arial, sans-serif;
+  color: var(--ink);
+}
+.stat-grid .stat-value.accent { color: var(--red); }
