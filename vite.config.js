@@ -31,25 +31,31 @@ const fixNestedDynamicRoutes = () => ({
 
 // Static-flagged routes in rogue 0.7.0 fetch `${url}/data.json` in BOTH
 // production (where SSG emitted the file) and dev (where it didn't).
-// rogueSsr's middleware handles `Accept: application/json` content
-// negotiation but doesn't recognize `*/data.json` paths, so static-route
-// client-side nav 404s in dev. This plugin rewrites the request before
-// it reaches rogueSsr — strip the suffix, force JSON accept, fall through
-// to rogueSsr's existing JSON path. Filed upstream as jjordy/rogue#61;
-// drop once rogueSsr itself handles data.json paths.
+// rogueSsr's middleware only handles `Accept: application/json` and
+// wraps the response as `{ data, params }`. Static routes expect the
+// BARE loader value (matching the SSG-emitted shape), so we can't just
+// rewrite into rogueSsr's content-neg path. This plugin handles
+// `*/data.json` directly by calling rogue's `loadData` and returning
+// the unwrapped value. Filed upstream as jjordy/rogue#61; drop once
+// rogueSsr itself recognizes data.json paths.
 const devDataJsonShim = () => ({
   name: 'paddock:dev-data-json',
   configureServer(server) {
-    server.middlewares.use((req, _res, next) => {
-      if (req.method === 'GET' && req.url && req.url.endsWith('/data.json')) {
-        const rewritten = req.url.replace(/\/data\.json$/, '') || '/'
-        req.url = rewritten
-        // rogueSsr reads `req.originalUrl ?? req.url` (it has its own
-        // reason for preferring originalUrl) so we have to overwrite both.
-        if (req.originalUrl) req.originalUrl = rewritten
-        req.headers.accept = 'application/json'
+    server.middlewares.use(async (req, res, next) => {
+      if (req.method !== 'GET' || !req.url || !req.url.endsWith('/data.json')) {
+        return next()
       }
-      next()
+      try {
+        const url = req.url.replace(/\/data\.json$/, '') || '/'
+        const { loadData } = await server.ssrLoadModule('@jjordy/rogue/server')
+        const { status, data } = await loadData(url, server)
+        res.statusCode = status
+        res.setHeader('Content-Type', 'application/json; charset=utf-8')
+        res.end(JSON.stringify(data ?? null))
+      } catch (err) {
+        server.ssrFixStacktrace?.(err)
+        next(err)
+      }
     })
   },
 })
