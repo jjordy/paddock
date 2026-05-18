@@ -1,0 +1,77 @@
+name: CI
+
+# Runs on pull requests only. Pushes to main get covered by deploy.yml,
+# so we don't double-up.
+on:
+  pull_request:
+
+# Cancel in-progress runs when a new commit is pushed to the same PR —
+# saves Actions minutes when someone iterates quickly.
+concurrency:
+  group: ci-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+# Minimum permissions. The default GITHUB_TOKEN's broad permissions are
+# the primary vector for fork-PR exploits; restricting to read-only
+# `contents` neutralizes that even if a malicious workflow snuck in.
+permissions:
+  contents: read
+
+jobs:
+  # SECURITY: fork PR runs only execute when triggered by a same-repo
+  # branch. PRs opened from a fork (`head.repo.full_name != github.repository`)
+  # skip every job silently. This is paired with the GitHub repo setting
+  # `Settings → Actions → Require approval for first-time contributors`
+  # so a maintainer must click "Approve and run" before any fork PR's
+  # workflow can fire, even if this if-guard is ever weakened. Together
+  # the two close off cache-poisoning and secret-exfiltration vectors.
+  typecheck:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # pnpm is provisioned via the `packageManager` field in package.json,
+      # which corepack reads. setup-node's `cache: pnpm` needs pnpm on PATH
+      # before it runs, so pnpm/action-setup goes first.
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'pnpm'
+
+      # --frozen-lockfile fails if pnpm-lock.yaml is out of sync with
+      # package.json — same posture as `npm ci`.
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Typecheck
+        run: pnpm run typecheck
+
+  build:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'pnpm'
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        # Build with the production BASE_PATH so PR builds catch GH-Pages-
+        # path bugs (asset URLs, router base) before they hit main.
+        env:
+          BASE_PATH: /paddock/
+        run: pnpm run build

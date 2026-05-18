@@ -1,0 +1,63 @@
+name: Sync F1 data
+
+# Pulls fresh data from Jolpica-F1 into data/*.json and, if anything
+# changed, opens an auto-PR. Once merged, deploy.yml rebuilds the site
+# with the new data.
+#
+# The cron schedule below is intentionally COMMENTED OUT until Phase 4
+# lands scripts/sync-data.ts. Until then this workflow runs only via
+# manual dispatch (workflow_dispatch).
+on:
+  # schedule:
+  #   - cron: '0 6 * * 1'    # Monday 06:00 UTC — before deploy.yml's 08:00
+  workflow_dispatch:
+
+# create-pull-request needs both contents and pull-requests write.
+permissions:
+  contents: write
+  pull-requests: write
+
+# One sync at a time. Cancelling mid-fetch would leave data/ in a
+# half-written state; let the previous run finish.
+concurrency:
+  group: sync-data
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'pnpm'
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Sync data from Jolpica-F1
+        # The script writes JSON files into data/ idempotently — only
+        # files whose serialized content changed get touched.
+        run: pnpm run sync-data
+
+      - name: Open PR if data changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: 'chore(data): sync from Jolpica-F1'
+          title: 'chore(data): sync from Jolpica-F1'
+          body: |
+            Automated data sync from the Jolpica-F1 API.
+
+            Merge to trigger a redeploy with fresh data.
+          branch: data-sync/auto
+          delete-branch: true
+          labels: |
+            ready-for-human
+          add-paths: |
+            data/
