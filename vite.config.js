@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import { rogue, rogueRouter } from '@jjordy/rogue/vite'
+import { rogue, rogueRouter, rogueSsr } from '@jjordy/rogue/vite'
 
 // GitHub Pages serves the repo at /paddock/, not /. The deploy workflow
 // sets BASE_PATH=/paddock/; dev and PR builds leave it unset and serve at /.
@@ -29,8 +29,35 @@ const fixNestedDynamicRoutes = () => ({
   },
 })
 
+// Static-flagged routes in rogue 0.7.0 fetch `${url}/data.json` in BOTH
+// production (where SSG emitted the file) and dev (where it didn't).
+// rogueSsr's middleware handles `Accept: application/json` content
+// negotiation but doesn't recognize `*/data.json` paths, so static-route
+// client-side nav 404s in dev. This plugin rewrites the request before
+// it reaches rogueSsr — strip the suffix, force JSON accept, fall through
+// to rogueSsr's existing JSON path. Filed upstream as jjordy/rogue#61;
+// drop once rogueSsr itself handles data.json paths.
+const devDataJsonShim = () => ({
+  name: 'paddock:dev-data-json',
+  configureServer(server) {
+    server.middlewares.use((req, _res, next) => {
+      if (req.method === 'GET' && req.url && req.url.endsWith('/data.json')) {
+        const rewritten = req.url.replace(/\/data\.json$/, '') || '/'
+        req.url = rewritten
+        // rogueSsr reads `req.originalUrl ?? req.url` (it has its own
+        // reason for preferring originalUrl) so we have to overwrite both.
+        if (req.originalUrl) req.originalUrl = rewritten
+        req.headers.accept = 'application/json'
+      }
+      next()
+    })
+  },
+})
+
 export default defineConfig({
   base: process.env.BASE_PATH || '/',
-  plugins: [rogue(), rogueRouter(), fixNestedDynamicRoutes()],
+  // Order matters: devDataJsonShim rewrites the URL BEFORE rogueSsr sees
+  // it, so rogueSsr's existing Accept: JSON branch handles the response.
+  plugins: [rogue(), rogueRouter(), devDataJsonShim(), rogueSsr(), fixNestedDynamicRoutes()],
   esbuild: { jsx: 'preserve' },
 })
