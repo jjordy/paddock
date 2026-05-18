@@ -102,12 +102,17 @@ export default function DriverDetail({ data }) {
   const pointsSeries = careerSeasons.map((s) => s.points)
   const winsSeries = careerSeasons.map((s) => s.wins)
   const podiumsSeries = careerSeasons.map((s) => s.podiums)
+  const vtName = `morph-drivers-${driver.id}`
   return (
     <div>
-      <h1>{driver.givenName} {driver.familyName}</h1>
-      <p class="lead">
-        <a href="/drivers">↩ all Drivers</a>
-      </p>
+      <div class="detail-hero" style={`view-transition-name: ${vtName}`}>
+        <div class="detail-hero-tag-small">Driver</div>
+        <h1>{driver.givenName} {driver.familyName}</h1>
+        <div class="detail-hero-meta">
+          {driver.nationality}{driver.code ? ` · ${driver.code}` : ''} · <a href="/drivers">all Drivers</a>
+        </div>
+        {driver.number != null && <div class="detail-hero-tag">{driver.number}</div>}
+      </div>
 
       <div class="stat-grid">
         {driver.number != null && (

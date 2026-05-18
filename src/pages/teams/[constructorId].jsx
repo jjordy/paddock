@@ -22,12 +22,16 @@ export default function ConstructorDetail({ data }) {
     )
   }
   const { constructor } = data
+  const vtName = `morph-teams-${constructor.id}`
   return (
     <div>
-      <h1>{constructor.name}</h1>
-      <p class="lead">
-        <a href="/teams">↩ all Constructors</a>
-      </p>
+      <div class="detail-hero" style={`view-transition-name: ${vtName}`}>
+        <div class="detail-hero-tag-small">Constructor</div>
+        <h1>{constructor.name}</h1>
+        <div class="detail-hero-meta">
+          {constructor.nationality} · <a href="/teams">all Constructors</a>
+        </div>
+      </div>
 
       <div class="stat-grid">
         <div class="stat">

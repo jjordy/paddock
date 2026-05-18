@@ -22,26 +22,46 @@
 
 ::view-transition-old(root),
 ::view-transition-new(root) {
-  animation-duration: 220ms;
-  /* Brake → apex → accelerate. Snappy ease-out. */
-  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  animation-duration: 320ms;
+  /* Brake → apex → accelerate. The aggressive curve front-loads the
+     motion so the page reacts immediately on click. */
+  animation-timing-function: cubic-bezier(0.4, 0, 0.1, 1);
 }
 
-/* Forward (default) — old page slides off to the left and shears
-   slightly; new page enters from the right with the inverse shear. */
+/* Forward — outgoing page lunges off to the left with a 4° skew and
+   loses saturation (dimming like a tail-light disappearing into the
+   distance). Incoming page enters from further right (80px) with a
+   brightness pulse that resolves at 60% of the timeline — telemetry
+   "ping" on arrival. */
 ::view-transition-old(root) { animation-name: paddock-out-fwd; }
 ::view-transition-new(root) { animation-name: paddock-in-fwd; }
 
 @keyframes paddock-out-fwd {
-  to { opacity: 0; transform: translateX(-18px) skewX(-2deg); }
+  to {
+    opacity: 0;
+    transform: translateX(-60px) skewX(-4deg);
+    filter: brightness(0.6) saturate(0.4);
+  }
 }
 @keyframes paddock-in-fwd {
-  from { opacity: 0; transform: translateX(24px) skewX(-2deg); }
+  0% {
+    opacity: 0;
+    transform: translateX(80px) skewX(-4deg);
+    filter: brightness(1.25) saturate(1.15);
+  }
+  60% {
+    filter: brightness(1) saturate(1);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
 }
 
 /* Back — mirror the motion so retracing a step actually FEELS like
-   a step backwards. Chrome 125+ honors the type tag; older browsers
-   silently fall back to the forward keyframes, which is fine. */
+   one. Chrome 125+ honors the type tag; older browsers silently fall
+   back to the forward keyframes. */
 :active-view-transition-type(back)::view-transition-old(root) {
   animation-name: paddock-out-back;
 }
@@ -50,10 +70,27 @@
 }
 
 @keyframes paddock-out-back {
-  to { opacity: 0; transform: translateX(18px) skewX(2deg); }
+  to {
+    opacity: 0;
+    transform: translateX(60px) skewX(4deg);
+    filter: brightness(0.6) saturate(0.4);
+  }
 }
 @keyframes paddock-in-back {
-  from { opacity: 0; transform: translateX(-24px) skewX(2deg); }
+  0% {
+    opacity: 0;
+    transform: translateX(-80px) skewX(4deg);
+    filter: brightness(1.25) saturate(1.15);
+  }
+  60% { filter: brightness(1) saturate(1); }
+  100% { opacity: 1; transform: none; filter: none; }
+}
+
+/* Shared-element morphs — list rows → detail hero. Long enough to
+   read the motion, shaped to feel like overtake-into-the-apex. */
+::view-transition-group(*) {
+  animation-duration: 380ms;
+  animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 /* Respect users who turn off animation. */
@@ -159,6 +196,75 @@ main {
   padding: 32px 40px;
   max-width: 96ch;
 }
+
+/* ============================================================
+ * Detail hero — the chassis-shaped slab that opens every detail
+ * page. Black background with a skewed red parallelogram accent
+ * on the left and a huge red number/round/year on the right.
+ * Spans edge-to-edge by negating main's padding.
+ * ============================================================ */
+.detail-hero {
+  position: relative;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 26px 32px 26px 56px;
+  margin: -32px -40px 28px;
+  border-bottom: 4px solid var(--red);
+  overflow: hidden;
+}
+.detail-hero::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 22px;
+  background: var(--red);
+  transform: skewX(-14deg);
+  transform-origin: top left;
+}
+.detail-hero h1 {
+  color: var(--paper);
+  font: 800 36px/1.05 "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -.01em;
+}
+.detail-hero h1::after { display: none; }
+.detail-hero-meta {
+  font: 600 12px/1.3 ui-monospace, monospace;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: rgba(255, 255, 255, 0.62);
+  margin-top: 10px;
+}
+.detail-hero-meta a {
+  color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
+}
+.detail-hero-meta a:hover { color: var(--paper); text-decoration: none; }
+.detail-hero-tag {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  font: 900 88px/0.9 "Helvetica Neue", Arial, sans-serif;
+  color: var(--red);
+  text-shadow: 0 0 20px rgba(225, 6, 0, 0.18);
+  letter-spacing: -.04em;
+  pointer-events: none;
+}
+.detail-hero-tag-small {
+  position: absolute;
+  right: 32px;
+  top: 14px;
+  font: 700 11px/1 ui-monospace, monospace;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  color: rgba(255, 255, 255, 0.4);
+}
+@media (max-width: 720px) {
+  .detail-hero-tag { font-size: 56px; right: 18px; }
+  .detail-hero h1 { font-size: 26px; }
+}
 main h1 {
   font: 800 30px/1.15 "Helvetica Neue", Arial, sans-serif;
   letter-spacing: -.01em;
@@ -210,8 +316,22 @@ main main { padding: 0; } /* defensive — avoid nested-main double padding */
 .list-table tbody td {
   padding: 8px 12px;
   border-bottom: 1px solid var(--paper-dim);
+  position: relative;
 }
 .list-table tbody tr:hover td { background: var(--paper-dim); }
+/* Red accent bar on hover — visual preview of the morph target that
+   slides in when the cursor enters a row. */
+.list-table tbody tr td:first-child::after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--red);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: transform 140ms ease-out;
+}
+.list-table tbody tr:hover td:first-child::after { transform: scaleY(1); }
 .list-table a { color: var(--ink); font-weight: 600; }
 .list-table a:hover { color: var(--red); }
 .list-table .num,

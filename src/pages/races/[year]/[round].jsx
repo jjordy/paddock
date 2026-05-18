@@ -84,13 +84,17 @@ export default function RaceDetail({ data }) {
     )
   }
   const { race, results, laps, finalOrder } = data
+  const vtName = `morph-races-${race.year}-${race.round}`
   return (
     <div>
-      <h1>{race.name}</h1>
-      <p class="lead">
-        {race.year} Season · Round {race.round} ·{' '}
-        <a href={`/seasons/${race.year}`}>↩ {race.year} calendar</a>
-      </p>
+      <div class="detail-hero" style={`view-transition-name: ${vtName}`}>
+        <div class="detail-hero-tag-small">Round {race.round} · {race.year}</div>
+        <h1>{race.name}</h1>
+        <div class="detail-hero-meta">
+          {race.date} · {race.circuitId} · <a href={`/seasons/${race.year}`}>{race.year} calendar</a>
+        </div>
+        <div class="detail-hero-tag">R{race.round}</div>
+      </div>
 
       <div class="stat-grid">
         <div class="stat">

@@ -21,13 +21,17 @@ export const loader = async ({ params }) => {
 
 export default function Season({ data }) {
   const { year, races, standings } = data
+  const vtName = `morph-seasons-${year}`
   return (
     <div>
-      <h1>{year} Season</h1>
-      <p class="lead">
-        {races.length} {races.length === 1 ? 'Race' : 'Races'} this Season.{' '}
-        <a href="/seasons">↩ all Seasons</a>
-      </p>
+      <div class="detail-hero" style={`view-transition-name: ${vtName}`}>
+        <div class="detail-hero-tag-small">Season</div>
+        <h1>{year} Formula One</h1>
+        <div class="detail-hero-meta">
+          {races.length} {races.length === 1 ? 'Race' : 'Races'} · <a href="/seasons">all Seasons</a>
+        </div>
+        <div class="detail-hero-tag">{year}</div>
+      </div>
 
       {standings && standings.rounds.length > 0 && (
         <>
