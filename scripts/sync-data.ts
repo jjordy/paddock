@@ -88,6 +88,21 @@ interface Race {
   url: string
 }
 
+interface RaceResult {
+  position: number | null  // null for DNF/DNS/DSQ — see positionText
+  positionText: string     // "1", "R" (retired), "D" (DSQ), "W" (withdrawn), "N" (not classified)
+  points: number
+  driverId: string         // FK → Driver.id
+  constructorId: string    // FK → Constructor.id
+  grid: number             // Starting Grid position; 0 = pit lane start
+  laps: number             // Laps completed
+  status: string           // "Finished" | "+1 Lap" | "Engine" | "Accident" | ...
+  time: string | null      // Winner: "1:30:21.123". Others: "+5.123" gap. DNF: null.
+  fastestLapRank: number | null    // 1 = fastest lap of the Race
+  fastestLapNumber: number | null  // which Lap was fastest
+  fastestLapTime: string | null    // "1:21.345"
+}
+
 // ============================================================
 // Network + I/O primitives
 // ============================================================
@@ -259,18 +274,80 @@ async function syncAllRaces(seasons: Season[]): Promise<void> {
 }
 
 // ============================================================
-// Stubs for the heavier per-race fetches. Wired up in later phases —
-// each one is bounded by the Race set already in data/races/, so they
-// can be added incrementally without re-running the top-level walk.
+// Per-race results
+//
+// Bounded by the Race set already in data/races/, so a per-Round walk
+// can be added incrementally without touching the top-level entities.
+// One file per Race: data/results/<year>/<round>.json, containing the
+// per-Driver classified result rows.
+//
+// RESULTS_SYNC_YEARS controls which Seasons get a results pass on every
+// run. Older Seasons can be backfilled by widening this list — once a
+// (year, round).json is written, idempotent writes mean later syncs
+// will only touch it again if the API actually returns different data.
 // ============================================================
 
-// async function syncResultsForRace(year: number, round: number): Promise<boolean> {
-//   // GET {year}/{round}/results.json → MRData.RaceTable.Races[0].Results
-//   // Normalize to: { position, driverId, constructorId, grid, status,
-//   // laps, points, time?, fastestLap? }
-//   // Write data/results/{year}/{round}.json
-//   throw new Error('not yet implemented')
-// }
+const RESULTS_SYNC_YEARS: number[] = [2024, 2025, 2026]
+
+async function syncResultsForRace(year: number, round: number): Promise<boolean> {
+  const raw = await fetchAll<any>(
+    `${year}/${round}/results`,
+    p => p.MRData.RaceTable.Races[0]?.Results ?? [],
+  )
+  const results: RaceResult[] = raw.map(r => ({
+    position: ['R', 'D', 'W', 'N', 'E'].includes(r.positionText)
+      ? null
+      : Number(r.position),
+    positionText: r.positionText,
+    points: Number(r.points),
+    driverId: r.Driver.driverId,
+    constructorId: r.Constructor.constructorId,
+    grid: Number(r.grid),
+    laps: Number(r.laps),
+    status: r.status,
+    time: r.Time?.time ?? null,
+    fastestLapRank: r.FastestLap?.rank ? Number(r.FastestLap.rank) : null,
+    fastestLapNumber: r.FastestLap?.lap ? Number(r.FastestLap.lap) : null,
+    fastestLapTime: r.FastestLap?.Time?.time ?? null,
+  }))
+  return writeIfChanged(
+    join(DATA_DIR, 'results', String(year), `${round}.json`),
+    results,
+  )
+}
+
+async function syncAllResults(): Promise<void> {
+  for (const year of RESULTS_SYNC_YEARS) {
+    process.stdout.write(`  results ${year}  ... `)
+    const races = await loadRacesForSeason(year)
+    if (races.length === 0) {
+      console.log('no races — skipping')
+      continue
+    }
+    let changed = 0
+    for (const r of races) {
+      if (await syncResultsForRace(r.year, r.round)) changed++
+    }
+    console.log(`${races.length} races (${changed} updated)`)
+  }
+}
+
+async function loadRacesForSeason(year: number): Promise<Race[]> {
+  const { readFile } = await import('node:fs/promises')
+  try {
+    const text = await readFile(join(DATA_DIR, 'races', `${year}.json`), 'utf8')
+    return JSON.parse(text)
+  } catch (err: any) {
+    if (err.code === 'ENOENT') return []
+    throw err
+  }
+}
+
+// ============================================================
+// Stubs for additional per-race fetches. Each is bounded by the Race
+// set in data/races/, so they can be added without touching the
+// top-level walk.
+// ============================================================
 
 // async function syncQualifyingForRace(year: number, round: number): Promise<boolean> {
 //   // GET {year}/{round}/qualifying.json
@@ -302,6 +379,7 @@ async function main() {
   await syncConstructors()
   await syncCircuits()
   await syncAllRaces(seasons)
+  await syncAllResults()
   console.log('Done.')
 }
 
