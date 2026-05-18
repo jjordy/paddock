@@ -2,14 +2,12 @@ name: Sync F1 data
 
 # Pulls fresh data from Jolpica-F1 into data/*.json and, if anything
 # changed, opens an auto-PR. Once merged, deploy.yml rebuilds the site
-# with the new data.
-#
-# The cron schedule below is intentionally COMMENTED OUT until Phase 4
-# lands scripts/sync-data.ts. Until then this workflow runs only via
-# manual dispatch (workflow_dispatch).
+# with the new data. Currently fetches seasons / drivers / constructors /
+# circuits / per-season race calendars — per-race detail (results,
+# qualifying, laps, pit stops) is staged for later phases.
 on:
-  # schedule:
-  #   - cron: '0 6 * * 1'    # Monday 06:00 UTC — before deploy.yml's 08:00
+  schedule:
+    - cron: '0 6 * * 1'    # Monday 06:00 UTC — before deploy.yml's 08:00 rebuild
   workflow_dispatch:
 
 # create-pull-request needs both contents and pull-requests write.
