@@ -20,21 +20,27 @@
 
 @view-transition { navigation: auto; }
 
+/* Root (header + sidebar) stays put. The named groups below — main
+   content, brand mark, list-row → hero morph — own all the motion.
+   Without this rule, the browser auto-cross-fades root, which can
+   read as a flicker; explicit `animation: none` skips that. */
 ::view-transition-old(root),
 ::view-transition-new(root) {
-  animation-duration: 320ms;
-  /* Brake → apex → accelerate. The aggressive curve front-loads the
-     motion so the page reacts immediately on click. */
-  animation-timing-function: cubic-bezier(0.4, 0, 0.1, 1);
+  animation: none;
+  mix-blend-mode: normal;
 }
 
-/* Forward — outgoing page lunges off to the left with a 4° skew and
-   loses saturation (dimming like a tail-light disappearing into the
-   distance). Incoming page enters from further right (80px) with a
-   brightness pulse that resolves at 60% of the timeline — telemetry
-   "ping" on arrival. */
-::view-transition-old(root) { animation-name: paddock-out-fwd; }
-::view-transition-new(root) { animation-name: paddock-in-fwd; }
+/* Page content — the only thing that physically moves on nav. Old
+   slides off to the left with a 4° skew and loses saturation (like
+   a tail-light vanishing); new enters from 80px right with a
+   brightness pulse that resolves at 60% — a telemetry ping on arrival. */
+::view-transition-old(page-content),
+::view-transition-new(page-content) {
+  animation-duration: 320ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.1, 1);
+}
+::view-transition-old(page-content) { animation-name: paddock-out-fwd; }
+::view-transition-new(page-content) { animation-name: paddock-in-fwd; }
 
 @keyframes paddock-out-fwd {
   to {
@@ -49,23 +55,17 @@
     transform: translateX(80px) skewX(-4deg);
     filter: brightness(1.25) saturate(1.15);
   }
-  60% {
-    filter: brightness(1) saturate(1);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-    filter: none;
-  }
+  60% { filter: brightness(1) saturate(1); }
+  100% { opacity: 1; transform: none; filter: none; }
 }
 
-/* Back — mirror the motion so retracing a step actually FEELS like
-   one. Chrome 125+ honors the type tag; older browsers silently fall
-   back to the forward keyframes. */
-:active-view-transition-type(back)::view-transition-old(root) {
+/* Back — mirror the motion so retracing a step feels like one.
+   Chrome 125+ honors :active-view-transition-type; older browsers
+   silently fall back to forward keyframes. */
+:active-view-transition-type(back)::view-transition-old(page-content) {
   animation-name: paddock-out-back;
 }
-:active-view-transition-type(back)::view-transition-new(root) {
+:active-view-transition-type(back)::view-transition-new(page-content) {
   animation-name: paddock-in-back;
 }
 
@@ -86,10 +86,32 @@
   100% { opacity: 1; transform: none; filter: none; }
 }
 
-/* Shared-element morphs — list rows → detail hero. Long enough to
-   read the motion, shaped to feel like overtake-into-the-apex. */
+/* Brand mark — the parallelogram in the header doesn't move with
+   the rest of the chassis, but it WINKS on every navigation: a
+   half-turn out, half-turn back in, like a tire grip going light.
+   Pulled out of the root snapshot so the surrounding header stays
+   stable. */
+::view-transition-old(brand-mark),
+::view-transition-new(brand-mark) {
+  animation-duration: 320ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.1, 1);
+}
+::view-transition-old(brand-mark) { animation-name: brand-spin-out; }
+::view-transition-new(brand-mark) { animation-name: brand-spin-in; }
+
+@keyframes brand-spin-out {
+  0%   { transform: skewX(-18deg) rotate(0);      opacity: 1; }
+  100% { transform: skewX(-18deg) rotate(180deg); opacity: 0; }
+}
+@keyframes brand-spin-in {
+  0%   { transform: skewX(-18deg) rotate(-180deg); opacity: 0; }
+  100% { transform: skewX(-18deg) rotate(0);       opacity: 1; }
+}
+
+/* Shared-element morphs — list rows → detail hero. Slower than the
+   main slide so the eye can follow the row growing into the panel. */
 ::view-transition-group(*) {
-  animation-duration: 380ms;
+  animation-duration: 420ms;
   animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
 }
 
@@ -152,6 +174,9 @@ header .brand .mark {
   width: 14px; height: 14px;
   background: var(--red);
   transform: skewX(-18deg);
+  /* Pulled out of the root snapshot so it can wink on its own during
+     navigation (see ::view-transition-*(brand-mark) above). */
+  view-transition-name: brand-mark;
 }
 header .tagline {
   color: #c9c9c9;
@@ -195,6 +220,9 @@ main {
   grid-area: main;
   padding: 32px 40px;
   max-width: 96ch;
+  /* The only thing that physically slides during navigation. Header
+     + sidebar stay locked via the root pseudos' animation: none. */
+  view-transition-name: page-content;
 }
 
 /* ============================================================
@@ -270,9 +298,6 @@ main h1 {
   letter-spacing: -.01em;
   margin: 0 0 12px;
   text-transform: uppercase;
-  /* Shared-element morph between pages: the browser interpolates
-     position + size as you navigate, content cross-fades through. */
-  view-transition-name: page-heading;
 }
 main h1::after {
   content: "";
