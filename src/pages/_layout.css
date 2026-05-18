@@ -182,3 +182,38 @@ main main { padding: 0; } /* defensive — avoid nested-main double padding */
   color: var(--ink);
 }
 .stat-grid .stat-value.accent { color: var(--red); }
+
+/* ============================================================
+ * Race pair — side-by-side last/next race cards on the home page
+ * ============================================================ */
+.race-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 1.25rem 0;
+}
+.race-card {
+  padding: 18px 20px;
+  background: var(--ink);
+  color: var(--paper);
+  border-top: 4px solid var(--red);
+}
+.race-card-next { background: var(--red); border-top-color: var(--ink); }
+.race-card-label {
+  font: 700 11px/1 ui-monospace, monospace;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  color: rgba(255,255,255,0.62);
+  margin-bottom: 8px;
+}
+.race-card-name {
+  font: 800 20px/1.15 "Helvetica Neue", Arial, sans-serif;
+  color: var(--paper);
+  display: inline-block;
+  margin-bottom: 4px;
+}
+a.race-card-name:hover { text-decoration: underline; }
+.race-card-date {
+  font: 500 13px/1 ui-monospace, monospace;
+  color: rgba(255,255,255,0.7);
+}

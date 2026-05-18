@@ -88,6 +88,28 @@ interface Race {
   url: string
 }
 
+interface DriverStanding {
+  position: number
+  points: number
+  wins: number
+  driverId: string          // FK → Driver.id
+  constructorId: string | null // Current Constructor — last in Ergast's array
+}
+
+interface ConstructorStanding {
+  position: number
+  points: number
+  wins: number
+  constructorId: string     // FK → Constructor.id
+}
+
+interface CurrentStandings {
+  year: number             // Season the standings are after
+  round: number            // Most recently completed Round
+  drivers: DriverStanding[]
+  constructors: ConstructorStanding[]
+}
+
 interface RaceResult {
   position: number | null  // null for DNF/DNS/DSQ — see positionText
   positionText: string     // "1", "R" (retired), "D" (DSQ), "W" (withdrawn), "N" (not classified)
@@ -344,6 +366,61 @@ async function loadRacesForSeason(year: number): Promise<Race[]> {
 }
 
 // ============================================================
+// Current Standings — Driver + Constructor leaderboards for the
+// most-recently-completed Round of the current Season. The home page
+// surfaces the top of both tables; later phases will fan out to per-
+// season standings for the championship-arc chart.
+// ============================================================
+
+async function syncCurrentStandings(): Promise<void> {
+  process.stdout.write(`  standings     ... `)
+  // The /current/* endpoints always resolve to the active Season; using a
+  // hard-coded year would risk going stale on January 1.
+  const driverRaw = await fetchAll<any>(
+    'current/driverStandings',
+    p => p.MRData.StandingsTable.StandingsLists[0]?.DriverStandings ?? [],
+  )
+  const constructorRaw = await fetchAll<any>(
+    'current/constructorStandings',
+    p => p.MRData.StandingsTable.StandingsLists[0]?.ConstructorStandings ?? [],
+  )
+
+  // The drivers and constructors lists for the same Season share the
+  // outer StandingsList — read year/round from a fresh request rather
+  // than holding the page in memory.
+  const meta = await fetchPage('current/driverStandings', 0)
+  const list = meta.MRData.StandingsTable.StandingsLists[0]
+  const year = list ? Number(list.season) : new Date().getFullYear()
+  const round = list ? Number(list.round) : 0
+
+  const standings: CurrentStandings = {
+    year,
+    round,
+    drivers: driverRaw.map((s: any) => ({
+      position: Number(s.position),
+      points: Number(s.points),
+      wins: Number(s.wins),
+      driverId: s.Driver.driverId,
+      constructorId:
+        s.Constructors?.[s.Constructors.length - 1]?.constructorId ?? null,
+    })),
+    constructors: constructorRaw.map((s: any) => ({
+      position: Number(s.position),
+      points: Number(s.points),
+      wins: Number(s.wins),
+      constructorId: s.Constructor.constructorId,
+    })),
+  }
+  const changed = await writeIfChanged(
+    join(DATA_DIR, 'standings', 'current.json'),
+    standings,
+  )
+  console.log(
+    `${year} after R${round} (${standings.drivers.length} drivers / ${standings.constructors.length} constructors, ${changed ? 'updated' : 'unchanged'})`,
+  )
+}
+
+// ============================================================
 // Stubs for additional per-race fetches. Each is bounded by the Race
 // set in data/races/, so they can be added without touching the
 // top-level walk.
@@ -371,15 +448,26 @@ async function loadRacesForSeason(year: number): Promise<Race[]> {
 // Main orchestrator
 // ============================================================
 
+// `--only=standings` skips the full-archive walk and only refreshes the
+// current standings — used for fast iteration when extending the home
+// page or championship-arc chart. The cron passes no args, so the
+// weekly run still covers everything.
+const ONLY = process.argv.find(a => a.startsWith('--only='))?.slice('--only='.length)
+
 async function main() {
-  console.log(`Sync from ${API_BASE}`)
+  console.log(`Sync from ${API_BASE}` + (ONLY ? ` [only=${ONLY}]` : ''))
   await mkdir(DATA_DIR, { recursive: true })
-  const seasons = await syncSeasons()
-  await syncDrivers()
-  await syncConstructors()
-  await syncCircuits()
-  await syncAllRaces(seasons)
-  await syncAllResults()
+  if (ONLY == null) {
+    const seasons = await syncSeasons()
+    await syncDrivers()
+    await syncConstructors()
+    await syncCircuits()
+    await syncAllRaces(seasons)
+    await syncAllResults()
+  }
+  if (ONLY == null || ONLY === 'standings') {
+    await syncCurrentStandings()
+  }
   console.log('Done.')
 }
 
