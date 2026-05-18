@@ -1,0 +1,200 @@
+[
+  {
+    "year": 2022,
+    "round": 1,
+    "name": "Bahrain Grand Prix",
+    "date": "2022-03-20",
+    "time": "15:00:00Z",
+    "circuitId": "bahrain",
+    "url": "https://en.wikipedia.org/wiki/2022_Bahrain_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 2,
+    "name": "Saudi Arabian Grand Prix",
+    "date": "2022-03-27",
+    "time": "17:00:00Z",
+    "circuitId": "jeddah",
+    "url": "https://en.wikipedia.org/wiki/2022_Saudi_Arabian_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 3,
+    "name": "Australian Grand Prix",
+    "date": "2022-04-10",
+    "time": "05:00:00Z",
+    "circuitId": "albert_park",
+    "url": "https://en.wikipedia.org/wiki/2022_Australian_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 4,
+    "name": "Emilia Romagna Grand Prix",
+    "date": "2022-04-24",
+    "time": "13:00:00Z",
+    "circuitId": "imola",
+    "url": "https://en.wikipedia.org/wiki/2022_Emilia_Romagna_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 5,
+    "name": "Miami Grand Prix",
+    "date": "2022-05-08",
+    "time": "19:30:00Z",
+    "circuitId": "miami",
+    "url": "https://en.wikipedia.org/wiki/2022_Miami_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 6,
+    "name": "Spanish Grand Prix",
+    "date": "2022-05-22",
+    "time": "13:00:00Z",
+    "circuitId": "catalunya",
+    "url": "https://en.wikipedia.org/wiki/2022_Spanish_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 7,
+    "name": "Monaco Grand Prix",
+    "date": "2022-05-29",
+    "time": "13:00:00Z",
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/2022_Monaco_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 8,
+    "name": "Azerbaijan Grand Prix",
+    "date": "2022-06-12",
+    "time": "11:00:00Z",
+    "circuitId": "baku",
+    "url": "https://en.wikipedia.org/wiki/2022_Azerbaijan_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 9,
+    "name": "Canadian Grand Prix",
+    "date": "2022-06-19",
+    "time": "18:00:00Z",
+    "circuitId": "villeneuve",
+    "url": "https://en.wikipedia.org/wiki/2022_Canadian_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 10,
+    "name": "British Grand Prix",
+    "date": "2022-07-03",
+    "time": "14:00:00Z",
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/2022_British_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 11,
+    "name": "Austrian Grand Prix",
+    "date": "2022-07-10",
+    "time": "13:00:00Z",
+    "circuitId": "red_bull_ring",
+    "url": "https://en.wikipedia.org/wiki/2022_Austrian_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 12,
+    "name": "French Grand Prix",
+    "date": "2022-07-24",
+    "time": "13:00:00Z",
+    "circuitId": "ricard",
+    "url": "https://en.wikipedia.org/wiki/2022_French_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 13,
+    "name": "Hungarian Grand Prix",
+    "date": "2022-07-31",
+    "time": "13:00:00Z",
+    "circuitId": "hungaroring",
+    "url": "https://en.wikipedia.org/wiki/2022_Hungarian_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 14,
+    "name": "Belgian Grand Prix",
+    "date": "2022-08-28",
+    "time": "13:00:00Z",
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/2022_Belgian_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 15,
+    "name": "Dutch Grand Prix",
+    "date": "2022-09-04",
+    "time": "13:00:00Z",
+    "circuitId": "zandvoort",
+    "url": "https://en.wikipedia.org/wiki/2022_Dutch_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 16,
+    "name": "Italian Grand Prix",
+    "date": "2022-09-11",
+    "time": "13:00:00Z",
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/2022_Italian_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 17,
+    "name": "Singapore Grand Prix",
+    "date": "2022-10-02",
+    "time": "12:00:00Z",
+    "circuitId": "marina_bay",
+    "url": "https://en.wikipedia.org/wiki/2022_Singapore_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 18,
+    "name": "Japanese Grand Prix",
+    "date": "2022-10-09",
+    "time": "05:00:00Z",
+    "circuitId": "suzuka",
+    "url": "https://en.wikipedia.org/wiki/2022_Japanese_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 19,
+    "name": "United States Grand Prix",
+    "date": "2022-10-23",
+    "time": "19:00:00Z",
+    "circuitId": "americas",
+    "url": "https://en.wikipedia.org/wiki/2022_United_States_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 20,
+    "name": "Mexico City Grand Prix",
+    "date": "2022-10-30",
+    "time": "20:00:00Z",
+    "circuitId": "rodriguez",
+    "url": "https://en.wikipedia.org/wiki/2022_Mexico_City_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 21,
+    "name": "São Paulo Grand Prix",
+    "date": "2022-11-13",
+    "time": "18:00:00Z",
+    "circuitId": "interlagos",
+    "url": "https://en.wikipedia.org/wiki/2022_São_Paulo_Grand_Prix"
+  },
+  {
+    "year": 2022,
+    "round": 22,
+    "name": "Abu Dhabi Grand Prix",
+    "date": "2022-11-20",
+    "time": "13:00:00Z",
+    "circuitId": "yas_marina",
+    "url": "https://en.wikipedia.org/wiki/2022_Abu_Dhabi_Grand_Prix"
+  }
+]

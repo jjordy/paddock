@@ -1,0 +1,83 @@
+[
+  {
+    "year": 1959,
+    "round": 1,
+    "name": "Monaco Grand Prix",
+    "date": "1959-05-10",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1959_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1959,
+    "round": 2,
+    "name": "Indianapolis 500",
+    "date": "1959-05-30",
+    "time": null,
+    "circuitId": "indianapolis",
+    "url": "https://en.wikipedia.org/wiki/1959_Indianapolis_500"
+  },
+  {
+    "year": 1959,
+    "round": 3,
+    "name": "Dutch Grand Prix",
+    "date": "1959-05-31",
+    "time": null,
+    "circuitId": "zandvoort",
+    "url": "https://en.wikipedia.org/wiki/1959_Dutch_Grand_Prix"
+  },
+  {
+    "year": 1959,
+    "round": 4,
+    "name": "French Grand Prix",
+    "date": "1959-07-05",
+    "time": null,
+    "circuitId": "reims",
+    "url": "https://en.wikipedia.org/wiki/1959_French_Grand_Prix"
+  },
+  {
+    "year": 1959,
+    "round": 5,
+    "name": "British Grand Prix",
+    "date": "1959-07-18",
+    "time": null,
+    "circuitId": "aintree",
+    "url": "https://en.wikipedia.org/wiki/1959_British_Grand_Prix"
+  },
+  {
+    "year": 1959,
+    "round": 6,
+    "name": "German Grand Prix",
+    "date": "1959-08-02",
+    "time": null,
+    "circuitId": "avus",
+    "url": "https://en.wikipedia.org/wiki/1959_German_Grand_Prix"
+  },
+  {
+    "year": 1959,
+    "round": 7,
+    "name": "Portuguese Grand Prix",
+    "date": "1959-08-23",
+    "time": null,
+    "circuitId": "monsanto",
+    "url": "https://en.wikipedia.org/wiki/1959_Portuguese_Grand_Prix"
+  },
+  {
+    "year": 1959,
+    "round": 8,
+    "name": "Italian Grand Prix",
+    "date": "1959-09-13",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1959_Italian_Grand_Prix"
+  },
+  {
+    "year": 1959,
+    "round": 9,
+    "name": "United States Grand Prix",
+    "date": "1959-12-12",
+    "time": null,
+    "circuitId": "sebring",
+    "url": "https://en.wikipedia.org/wiki/1959_United_States_Grand_Prix"
+  }
+]

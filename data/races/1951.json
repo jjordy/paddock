@@ -1,0 +1,74 @@
+[
+  {
+    "year": 1951,
+    "round": 1,
+    "name": "Swiss Grand Prix",
+    "date": "1951-05-27",
+    "time": null,
+    "circuitId": "bremgarten",
+    "url": "https://en.wikipedia.org/wiki/1951_Swiss_Grand_Prix"
+  },
+  {
+    "year": 1951,
+    "round": 2,
+    "name": "Indianapolis 500",
+    "date": "1951-05-30",
+    "time": null,
+    "circuitId": "indianapolis",
+    "url": "https://en.wikipedia.org/wiki/1951_Indianapolis_500"
+  },
+  {
+    "year": 1951,
+    "round": 3,
+    "name": "Belgian Grand Prix",
+    "date": "1951-06-17",
+    "time": null,
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/1951_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1951,
+    "round": 4,
+    "name": "French Grand Prix",
+    "date": "1951-07-01",
+    "time": null,
+    "circuitId": "reims",
+    "url": "https://en.wikipedia.org/wiki/1951_French_Grand_Prix"
+  },
+  {
+    "year": 1951,
+    "round": 5,
+    "name": "British Grand Prix",
+    "date": "1951-07-14",
+    "time": null,
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/1951_British_Grand_Prix"
+  },
+  {
+    "year": 1951,
+    "round": 6,
+    "name": "German Grand Prix",
+    "date": "1951-07-29",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/1951_German_Grand_Prix"
+  },
+  {
+    "year": 1951,
+    "round": 7,
+    "name": "Italian Grand Prix",
+    "date": "1951-09-16",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1951_Italian_Grand_Prix"
+  },
+  {
+    "year": 1951,
+    "round": 8,
+    "name": "Spanish Grand Prix",
+    "date": "1951-10-28",
+    "time": null,
+    "circuitId": "pedralbes",
+    "url": "https://en.wikipedia.org/wiki/1951_Spanish_Grand_Prix"
+  }
+]

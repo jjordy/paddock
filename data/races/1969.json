@@ -1,0 +1,101 @@
+[
+  {
+    "year": 1969,
+    "round": 1,
+    "name": "South African Grand Prix",
+    "date": "1969-03-01",
+    "time": null,
+    "circuitId": "kyalami",
+    "url": "https://en.wikipedia.org/wiki/1969_South_African_Grand_Prix"
+  },
+  {
+    "year": 1969,
+    "round": 2,
+    "name": "Spanish Grand Prix",
+    "date": "1969-05-04",
+    "time": null,
+    "circuitId": "montjuic",
+    "url": "https://en.wikipedia.org/wiki/1969_Spanish_Grand_Prix"
+  },
+  {
+    "year": 1969,
+    "round": 3,
+    "name": "Monaco Grand Prix",
+    "date": "1969-05-18",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1969_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1969,
+    "round": 4,
+    "name": "Dutch Grand Prix",
+    "date": "1969-06-21",
+    "time": null,
+    "circuitId": "zandvoort",
+    "url": "https://en.wikipedia.org/wiki/1969_Dutch_Grand_Prix"
+  },
+  {
+    "year": 1969,
+    "round": 5,
+    "name": "French Grand Prix",
+    "date": "1969-07-06",
+    "time": null,
+    "circuitId": "charade",
+    "url": "https://en.wikipedia.org/wiki/1969_French_Grand_Prix"
+  },
+  {
+    "year": 1969,
+    "round": 6,
+    "name": "British Grand Prix",
+    "date": "1969-07-19",
+    "time": null,
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/1969_British_Grand_Prix"
+  },
+  {
+    "year": 1969,
+    "round": 7,
+    "name": "German Grand Prix",
+    "date": "1969-08-03",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/1969_German_Grand_Prix"
+  },
+  {
+    "year": 1969,
+    "round": 8,
+    "name": "Italian Grand Prix",
+    "date": "1969-09-07",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1969_Italian_Grand_Prix"
+  },
+  {
+    "year": 1969,
+    "round": 9,
+    "name": "Canadian Grand Prix",
+    "date": "1969-09-20",
+    "time": null,
+    "circuitId": "mosport",
+    "url": "https://en.wikipedia.org/wiki/1969_Canadian_Grand_Prix"
+  },
+  {
+    "year": 1969,
+    "round": 10,
+    "name": "United States Grand Prix",
+    "date": "1969-10-05",
+    "time": null,
+    "circuitId": "watkins_glen",
+    "url": "https://en.wikipedia.org/wiki/1969_United_States_Grand_Prix"
+  },
+  {
+    "year": 1969,
+    "round": 11,
+    "name": "Mexican Grand Prix",
+    "date": "1969-10-19",
+    "time": null,
+    "circuitId": "rodriguez",
+    "url": "https://en.wikipedia.org/wiki/1969_Mexican_Grand_Prix"
+  }
+]

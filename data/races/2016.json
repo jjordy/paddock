@@ -1,0 +1,191 @@
+[
+  {
+    "year": 2016,
+    "round": 1,
+    "name": "Australian Grand Prix",
+    "date": "2016-03-20",
+    "time": "05:00:00Z",
+    "circuitId": "albert_park",
+    "url": "https://en.wikipedia.org/wiki/2016_Australian_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 2,
+    "name": "Bahrain Grand Prix",
+    "date": "2016-04-03",
+    "time": "15:00:00Z",
+    "circuitId": "bahrain",
+    "url": "https://en.wikipedia.org/wiki/2016_Bahrain_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 3,
+    "name": "Chinese Grand Prix",
+    "date": "2016-04-17",
+    "time": "06:00:00Z",
+    "circuitId": "shanghai",
+    "url": "https://en.wikipedia.org/wiki/2016_Chinese_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 4,
+    "name": "Russian Grand Prix",
+    "date": "2016-05-01",
+    "time": "12:00:00Z",
+    "circuitId": "sochi",
+    "url": "https://en.wikipedia.org/wiki/2016_Russian_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 5,
+    "name": "Spanish Grand Prix",
+    "date": "2016-05-15",
+    "time": "12:00:00Z",
+    "circuitId": "catalunya",
+    "url": "https://en.wikipedia.org/wiki/2016_Spanish_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 6,
+    "name": "Monaco Grand Prix",
+    "date": "2016-05-29",
+    "time": "12:00:00Z",
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/2016_Monaco_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 7,
+    "name": "Canadian Grand Prix",
+    "date": "2016-06-12",
+    "time": "18:00:00Z",
+    "circuitId": "villeneuve",
+    "url": "https://en.wikipedia.org/wiki/2016_Canadian_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 8,
+    "name": "European Grand Prix",
+    "date": "2016-06-19",
+    "time": "13:00:00Z",
+    "circuitId": "baku",
+    "url": "https://en.wikipedia.org/wiki/2016_European_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 9,
+    "name": "Austrian Grand Prix",
+    "date": "2016-07-03",
+    "time": "12:00:00Z",
+    "circuitId": "red_bull_ring",
+    "url": "https://en.wikipedia.org/wiki/2016_Austrian_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 10,
+    "name": "British Grand Prix",
+    "date": "2016-07-10",
+    "time": "12:00:00Z",
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/2016_British_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 11,
+    "name": "Hungarian Grand Prix",
+    "date": "2016-07-24",
+    "time": "12:00:00Z",
+    "circuitId": "hungaroring",
+    "url": "https://en.wikipedia.org/wiki/2016_Hungarian_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 12,
+    "name": "German Grand Prix",
+    "date": "2016-07-31",
+    "time": "12:00:00Z",
+    "circuitId": "hockenheimring",
+    "url": "https://en.wikipedia.org/wiki/2016_German_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 13,
+    "name": "Belgian Grand Prix",
+    "date": "2016-08-28",
+    "time": "12:00:00Z",
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/2016_Belgian_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 14,
+    "name": "Italian Grand Prix",
+    "date": "2016-09-04",
+    "time": "12:00:00Z",
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/2016_Italian_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 15,
+    "name": "Singapore Grand Prix",
+    "date": "2016-09-18",
+    "time": "12:00:00Z",
+    "circuitId": "marina_bay",
+    "url": "https://en.wikipedia.org/wiki/2016_Singapore_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 16,
+    "name": "Malaysian Grand Prix",
+    "date": "2016-10-02",
+    "time": "07:00:00Z",
+    "circuitId": "sepang",
+    "url": "https://en.wikipedia.org/wiki/2016_Malaysian_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 17,
+    "name": "Japanese Grand Prix",
+    "date": "2016-10-09",
+    "time": "05:00:00Z",
+    "circuitId": "suzuka",
+    "url": "https://en.wikipedia.org/wiki/2016_Japanese_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 18,
+    "name": "United States Grand Prix",
+    "date": "2016-10-23",
+    "time": "19:00:00Z",
+    "circuitId": "americas",
+    "url": "https://en.wikipedia.org/wiki/2016_United_States_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 19,
+    "name": "Mexican Grand Prix",
+    "date": "2016-10-30",
+    "time": "19:00:00Z",
+    "circuitId": "rodriguez",
+    "url": "https://en.wikipedia.org/wiki/2016_Mexican_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 20,
+    "name": "Brazilian Grand Prix",
+    "date": "2016-11-13",
+    "time": "16:00:00Z",
+    "circuitId": "interlagos",
+    "url": "https://en.wikipedia.org/wiki/2016_Brazilian_Grand_Prix"
+  },
+  {
+    "year": 2016,
+    "round": 21,
+    "name": "Abu Dhabi Grand Prix",
+    "date": "2016-11-27",
+    "time": "13:00:00Z",
+    "circuitId": "yas_marina",
+    "url": "https://en.wikipedia.org/wiki/2016_Abu_Dhabi_Grand_Prix"
+  }
+]

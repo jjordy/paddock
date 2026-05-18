@@ -1,0 +1,83 @@
+[
+  {
+    "year": 1954,
+    "round": 1,
+    "name": "Argentine Grand Prix",
+    "date": "1954-01-17",
+    "time": null,
+    "circuitId": "galvez",
+    "url": "https://en.wikipedia.org/wiki/1954_Argentine_Grand_Prix"
+  },
+  {
+    "year": 1954,
+    "round": 2,
+    "name": "Indianapolis 500",
+    "date": "1954-05-31",
+    "time": null,
+    "circuitId": "indianapolis",
+    "url": "https://en.wikipedia.org/wiki/1954_Indianapolis_500"
+  },
+  {
+    "year": 1954,
+    "round": 3,
+    "name": "Belgian Grand Prix",
+    "date": "1954-06-20",
+    "time": null,
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/1954_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1954,
+    "round": 4,
+    "name": "French Grand Prix",
+    "date": "1954-07-04",
+    "time": null,
+    "circuitId": "reims",
+    "url": "https://en.wikipedia.org/wiki/1954_French_Grand_Prix"
+  },
+  {
+    "year": 1954,
+    "round": 5,
+    "name": "British Grand Prix",
+    "date": "1954-07-17",
+    "time": null,
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/1954_British_Grand_Prix"
+  },
+  {
+    "year": 1954,
+    "round": 6,
+    "name": "German Grand Prix",
+    "date": "1954-08-01",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/1954_German_Grand_Prix"
+  },
+  {
+    "year": 1954,
+    "round": 7,
+    "name": "Swiss Grand Prix",
+    "date": "1954-08-22",
+    "time": null,
+    "circuitId": "bremgarten",
+    "url": "https://en.wikipedia.org/wiki/1954_Swiss_Grand_Prix"
+  },
+  {
+    "year": 1954,
+    "round": 8,
+    "name": "Italian Grand Prix",
+    "date": "1954-09-05",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1954_Italian_Grand_Prix"
+  },
+  {
+    "year": 1954,
+    "round": 9,
+    "name": "Spanish Grand Prix",
+    "date": "1954-10-24",
+    "time": null,
+    "circuitId": "pedralbes",
+    "url": "https://en.wikipedia.org/wiki/1954_Spanish_Grand_Prix"
+  }
+]

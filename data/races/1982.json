@@ -1,0 +1,146 @@
+[
+  {
+    "year": 1982,
+    "round": 1,
+    "name": "South African Grand Prix",
+    "date": "1982-01-23",
+    "time": null,
+    "circuitId": "kyalami",
+    "url": "https://en.wikipedia.org/wiki/1982_South_African_Grand_Prix"
+  },
+  {
+    "year": 1982,
+    "round": 2,
+    "name": "Brazilian Grand Prix",
+    "date": "1982-03-21",
+    "time": null,
+    "circuitId": "jacarepagua",
+    "url": "https://en.wikipedia.org/wiki/1982_Brazilian_Grand_Prix"
+  },
+  {
+    "year": 1982,
+    "round": 3,
+    "name": "United States Grand Prix West",
+    "date": "1982-04-04",
+    "time": null,
+    "circuitId": "long_beach",
+    "url": "https://en.wikipedia.org/wiki/1982_United_States_Grand_Prix_West"
+  },
+  {
+    "year": 1982,
+    "round": 4,
+    "name": "San Marino Grand Prix",
+    "date": "1982-04-25",
+    "time": null,
+    "circuitId": "imola",
+    "url": "https://en.wikipedia.org/wiki/1982_San_Marino_Grand_Prix"
+  },
+  {
+    "year": 1982,
+    "round": 5,
+    "name": "Belgian Grand Prix",
+    "date": "1982-05-09",
+    "time": null,
+    "circuitId": "zolder",
+    "url": "https://en.wikipedia.org/wiki/1982_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1982,
+    "round": 6,
+    "name": "Monaco Grand Prix",
+    "date": "1982-05-23",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1982_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1982,
+    "round": 7,
+    "name": "Detroit Grand Prix",
+    "date": "1982-06-06",
+    "time": null,
+    "circuitId": "detroit",
+    "url": "https://en.wikipedia.org/wiki/1982_Detroit_Grand_Prix"
+  },
+  {
+    "year": 1982,
+    "round": 8,
+    "name": "Canadian Grand Prix",
+    "date": "1982-06-13",
+    "time": null,
+    "circuitId": "villeneuve",
+    "url": "https://en.wikipedia.org/wiki/1982_Canadian_Grand_Prix"
+  },
+  {
+    "year": 1982,
+    "round": 9,
+    "name": "Dutch Grand Prix",
+    "date": "1982-07-03",
+    "time": null,
+    "circuitId": "zandvoort",
+    "url": "https://en.wikipedia.org/wiki/1982_Dutch_Grand_Prix"
+  },
+  {
+    "year": 1982,
+    "round": 10,
+    "name": "British Grand Prix",
+    "date": "1982-07-18",
+    "time": null,
+    "circuitId": "brands_hatch",
+    "url": "https://en.wikipedia.org/wiki/1982_British_Grand_Prix"
+  },
+  {
+    "year": 1982,
+    "round": 11,
+    "name": "French Grand Prix",
+    "date": "1982-07-25",
+    "time": null,
+    "circuitId": "ricard",
+    "url": "https://en.wikipedia.org/wiki/1982_French_Grand_Prix"
+  },
+  {
+    "year": 1982,
+    "round": 12,
+    "name": "German Grand Prix",
+    "date": "1982-08-08",
+    "time": null,
+    "circuitId": "hockenheimring",
+    "url": "https://en.wikipedia.org/wiki/1982_German_Grand_Prix"
+  },
+  {
+    "year": 1982,
+    "round": 13,
+    "name": "Austrian Grand Prix",
+    "date": "1982-08-15",
+    "time": null,
+    "circuitId": "red_bull_ring",
+    "url": "https://en.wikipedia.org/wiki/1982_Austrian_Grand_Prix"
+  },
+  {
+    "year": 1982,
+    "round": 14,
+    "name": "Swiss Grand Prix",
+    "date": "1982-08-29",
+    "time": null,
+    "circuitId": "dijon",
+    "url": "https://en.wikipedia.org/wiki/1982_Swiss_Grand_Prix"
+  },
+  {
+    "year": 1982,
+    "round": 15,
+    "name": "Italian Grand Prix",
+    "date": "1982-09-12",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1982_Italian_Grand_Prix"
+  },
+  {
+    "year": 1982,
+    "round": 16,
+    "name": "Caesars Palace Grand Prix",
+    "date": "1982-09-25",
+    "time": null,
+    "circuitId": "las_vegas",
+    "url": "https://en.wikipedia.org/wiki/1982_Caesars_Palace_Grand_Prix"
+  }
+]

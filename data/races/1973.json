@@ -1,0 +1,137 @@
+[
+  {
+    "year": 1973,
+    "round": 1,
+    "name": "Argentine Grand Prix",
+    "date": "1973-01-28",
+    "time": null,
+    "circuitId": "galvez",
+    "url": "https://en.wikipedia.org/wiki/1973_Argentine_Grand_Prix"
+  },
+  {
+    "year": 1973,
+    "round": 2,
+    "name": "Brazilian Grand Prix",
+    "date": "1973-02-11",
+    "time": null,
+    "circuitId": "interlagos",
+    "url": "https://en.wikipedia.org/wiki/1973_Brazilian_Grand_Prix"
+  },
+  {
+    "year": 1973,
+    "round": 3,
+    "name": "South African Grand Prix",
+    "date": "1973-03-03",
+    "time": null,
+    "circuitId": "kyalami",
+    "url": "https://en.wikipedia.org/wiki/1973_South_African_Grand_Prix"
+  },
+  {
+    "year": 1973,
+    "round": 4,
+    "name": "Spanish Grand Prix",
+    "date": "1973-04-29",
+    "time": null,
+    "circuitId": "montjuic",
+    "url": "https://en.wikipedia.org/wiki/1973_Spanish_Grand_Prix"
+  },
+  {
+    "year": 1973,
+    "round": 5,
+    "name": "Belgian Grand Prix",
+    "date": "1973-05-20",
+    "time": null,
+    "circuitId": "zolder",
+    "url": "https://en.wikipedia.org/wiki/1973_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1973,
+    "round": 6,
+    "name": "Monaco Grand Prix",
+    "date": "1973-06-03",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1973_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1973,
+    "round": 7,
+    "name": "Swedish Grand Prix",
+    "date": "1973-06-17",
+    "time": null,
+    "circuitId": "anderstorp",
+    "url": "https://en.wikipedia.org/wiki/1973_Swedish_Grand_Prix"
+  },
+  {
+    "year": 1973,
+    "round": 8,
+    "name": "French Grand Prix",
+    "date": "1973-07-01",
+    "time": null,
+    "circuitId": "ricard",
+    "url": "https://en.wikipedia.org/wiki/1973_French_Grand_Prix"
+  },
+  {
+    "year": 1973,
+    "round": 9,
+    "name": "British Grand Prix",
+    "date": "1973-07-14",
+    "time": null,
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/1973_British_Grand_Prix"
+  },
+  {
+    "year": 1973,
+    "round": 10,
+    "name": "Dutch Grand Prix",
+    "date": "1973-07-29",
+    "time": null,
+    "circuitId": "zandvoort",
+    "url": "https://en.wikipedia.org/wiki/1973_Dutch_Grand_Prix"
+  },
+  {
+    "year": 1973,
+    "round": 11,
+    "name": "German Grand Prix",
+    "date": "1973-08-05",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/1973_German_Grand_Prix"
+  },
+  {
+    "year": 1973,
+    "round": 12,
+    "name": "Austrian Grand Prix",
+    "date": "1973-08-19",
+    "time": null,
+    "circuitId": "red_bull_ring",
+    "url": "https://en.wikipedia.org/wiki/1973_Austrian_Grand_Prix"
+  },
+  {
+    "year": 1973,
+    "round": 13,
+    "name": "Italian Grand Prix",
+    "date": "1973-09-09",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1973_Italian_Grand_Prix"
+  },
+  {
+    "year": 1973,
+    "round": 14,
+    "name": "Canadian Grand Prix",
+    "date": "1973-09-23",
+    "time": null,
+    "circuitId": "mosport",
+    "url": "https://en.wikipedia.org/wiki/1973_Canadian_Grand_Prix"
+  },
+  {
+    "year": 1973,
+    "round": 15,
+    "name": "United States Grand Prix",
+    "date": "1973-10-07",
+    "time": null,
+    "circuitId": "watkins_glen",
+    "url": "https://en.wikipedia.org/wiki/1973_United_States_Grand_Prix"
+  }
+]

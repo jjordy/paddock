@@ -1,0 +1,146 @@
+[
+  {
+    "year": 1976,
+    "round": 1,
+    "name": "Brazilian Grand Prix",
+    "date": "1976-01-25",
+    "time": null,
+    "circuitId": "interlagos",
+    "url": "https://en.wikipedia.org/wiki/1976_Brazilian_Grand_Prix"
+  },
+  {
+    "year": 1976,
+    "round": 2,
+    "name": "South African Grand Prix",
+    "date": "1976-03-06",
+    "time": null,
+    "circuitId": "kyalami",
+    "url": "https://en.wikipedia.org/wiki/1976_South_African_Grand_Prix"
+  },
+  {
+    "year": 1976,
+    "round": 3,
+    "name": "United States Grand Prix West",
+    "date": "1976-03-28",
+    "time": null,
+    "circuitId": "long_beach",
+    "url": "https://en.wikipedia.org/wiki/1976_United_States_Grand_Prix_West"
+  },
+  {
+    "year": 1976,
+    "round": 4,
+    "name": "Spanish Grand Prix",
+    "date": "1976-05-02",
+    "time": null,
+    "circuitId": "jarama",
+    "url": "https://en.wikipedia.org/wiki/1976_Spanish_Grand_Prix"
+  },
+  {
+    "year": 1976,
+    "round": 5,
+    "name": "Belgian Grand Prix",
+    "date": "1976-05-16",
+    "time": null,
+    "circuitId": "zolder",
+    "url": "https://en.wikipedia.org/wiki/1976_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1976,
+    "round": 6,
+    "name": "Monaco Grand Prix",
+    "date": "1976-05-30",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1976_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1976,
+    "round": 7,
+    "name": "Swedish Grand Prix",
+    "date": "1976-06-13",
+    "time": null,
+    "circuitId": "anderstorp",
+    "url": "https://en.wikipedia.org/wiki/1976_Swedish_Grand_Prix"
+  },
+  {
+    "year": 1976,
+    "round": 8,
+    "name": "French Grand Prix",
+    "date": "1976-07-04",
+    "time": null,
+    "circuitId": "ricard",
+    "url": "https://en.wikipedia.org/wiki/1976_French_Grand_Prix"
+  },
+  {
+    "year": 1976,
+    "round": 9,
+    "name": "British Grand Prix",
+    "date": "1976-07-18",
+    "time": null,
+    "circuitId": "brands_hatch",
+    "url": "https://en.wikipedia.org/wiki/1976_British_Grand_Prix"
+  },
+  {
+    "year": 1976,
+    "round": 10,
+    "name": "German Grand Prix",
+    "date": "1976-08-01",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/1976_German_Grand_Prix"
+  },
+  {
+    "year": 1976,
+    "round": 11,
+    "name": "Austrian Grand Prix",
+    "date": "1976-08-15",
+    "time": null,
+    "circuitId": "red_bull_ring",
+    "url": "https://en.wikipedia.org/wiki/1976_Austrian_Grand_Prix"
+  },
+  {
+    "year": 1976,
+    "round": 12,
+    "name": "Dutch Grand Prix",
+    "date": "1976-08-29",
+    "time": null,
+    "circuitId": "zandvoort",
+    "url": "https://en.wikipedia.org/wiki/1976_Dutch_Grand_Prix"
+  },
+  {
+    "year": 1976,
+    "round": 13,
+    "name": "Italian Grand Prix",
+    "date": "1976-09-12",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1976_Italian_Grand_Prix"
+  },
+  {
+    "year": 1976,
+    "round": 14,
+    "name": "Canadian Grand Prix",
+    "date": "1976-10-03",
+    "time": null,
+    "circuitId": "mosport",
+    "url": "https://en.wikipedia.org/wiki/1976_Canadian_Grand_Prix"
+  },
+  {
+    "year": 1976,
+    "round": 15,
+    "name": "United States Grand Prix",
+    "date": "1976-10-10",
+    "time": null,
+    "circuitId": "watkins_glen",
+    "url": "https://en.wikipedia.org/wiki/1976_United_States_Grand_Prix"
+  },
+  {
+    "year": 1976,
+    "round": 16,
+    "name": "Japanese Grand Prix",
+    "date": "1976-10-24",
+    "time": null,
+    "circuitId": "fuji",
+    "url": "https://en.wikipedia.org/wiki/1976_Japanese_Grand_Prix"
+  }
+]

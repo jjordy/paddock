@@ -1,0 +1,74 @@
+[
+  {
+    "year": 1952,
+    "round": 1,
+    "name": "Swiss Grand Prix",
+    "date": "1952-05-18",
+    "time": null,
+    "circuitId": "bremgarten",
+    "url": "https://en.wikipedia.org/wiki/1952_Swiss_Grand_Prix"
+  },
+  {
+    "year": 1952,
+    "round": 2,
+    "name": "Indianapolis 500",
+    "date": "1952-05-30",
+    "time": null,
+    "circuitId": "indianapolis",
+    "url": "https://en.wikipedia.org/wiki/1952_Indianapolis_500"
+  },
+  {
+    "year": 1952,
+    "round": 3,
+    "name": "Belgian Grand Prix",
+    "date": "1952-06-22",
+    "time": null,
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/1952_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1952,
+    "round": 4,
+    "name": "French Grand Prix",
+    "date": "1952-07-06",
+    "time": null,
+    "circuitId": "essarts",
+    "url": "https://en.wikipedia.org/wiki/1952_French_Grand_Prix"
+  },
+  {
+    "year": 1952,
+    "round": 5,
+    "name": "British Grand Prix",
+    "date": "1952-07-19",
+    "time": null,
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/1952_British_Grand_Prix"
+  },
+  {
+    "year": 1952,
+    "round": 6,
+    "name": "German Grand Prix",
+    "date": "1952-08-03",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/1952_German_Grand_Prix"
+  },
+  {
+    "year": 1952,
+    "round": 7,
+    "name": "Dutch Grand Prix",
+    "date": "1952-08-17",
+    "time": null,
+    "circuitId": "zandvoort",
+    "url": "https://en.wikipedia.org/wiki/1952_Dutch_Grand_Prix"
+  },
+  {
+    "year": 1952,
+    "round": 8,
+    "name": "Italian Grand Prix",
+    "date": "1952-09-07",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1952_Italian_Grand_Prix"
+  }
+]

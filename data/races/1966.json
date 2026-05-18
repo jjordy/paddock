@@ -1,0 +1,83 @@
+[
+  {
+    "year": 1966,
+    "round": 1,
+    "name": "Monaco Grand Prix",
+    "date": "1966-05-22",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1966_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1966,
+    "round": 2,
+    "name": "Belgian Grand Prix",
+    "date": "1966-06-12",
+    "time": null,
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/1966_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1966,
+    "round": 3,
+    "name": "French Grand Prix",
+    "date": "1966-07-03",
+    "time": null,
+    "circuitId": "reims",
+    "url": "https://en.wikipedia.org/wiki/1966_French_Grand_Prix"
+  },
+  {
+    "year": 1966,
+    "round": 4,
+    "name": "British Grand Prix",
+    "date": "1966-07-16",
+    "time": null,
+    "circuitId": "brands_hatch",
+    "url": "https://en.wikipedia.org/wiki/1966_British_Grand_Prix"
+  },
+  {
+    "year": 1966,
+    "round": 5,
+    "name": "Dutch Grand Prix",
+    "date": "1966-07-24",
+    "time": null,
+    "circuitId": "zandvoort",
+    "url": "https://en.wikipedia.org/wiki/1966_Dutch_Grand_Prix"
+  },
+  {
+    "year": 1966,
+    "round": 6,
+    "name": "German Grand Prix",
+    "date": "1966-08-07",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/1966_German_Grand_Prix"
+  },
+  {
+    "year": 1966,
+    "round": 7,
+    "name": "Italian Grand Prix",
+    "date": "1966-09-04",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1966_Italian_Grand_Prix"
+  },
+  {
+    "year": 1966,
+    "round": 8,
+    "name": "United States Grand Prix",
+    "date": "1966-10-02",
+    "time": null,
+    "circuitId": "watkins_glen",
+    "url": "https://en.wikipedia.org/wiki/1966_United_States_Grand_Prix"
+  },
+  {
+    "year": 1966,
+    "round": 9,
+    "name": "Mexican Grand Prix",
+    "date": "1966-10-23",
+    "time": null,
+    "circuitId": "rodriguez",
+    "url": "https://en.wikipedia.org/wiki/1966_Mexican_Grand_Prix"
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "year": 1996,
+    "round": 1,
+    "name": "Australian Grand Prix",
+    "date": "1996-03-10",
+    "time": null,
+    "circuitId": "albert_park",
+    "url": "https://en.wikipedia.org/wiki/1996_Australian_Grand_Prix"
+  },
+  {
+    "year": 1996,
+    "round": 2,
+    "name": "Brazilian Grand Prix",
+    "date": "1996-03-31",
+    "time": null,
+    "circuitId": "interlagos",
+    "url": "https://en.wikipedia.org/wiki/1996_Brazilian_Grand_Prix"
+  },
+  {
+    "year": 1996,
+    "round": 3,
+    "name": "Argentine Grand Prix",
+    "date": "1996-04-07",
+    "time": null,
+    "circuitId": "galvez",
+    "url": "https://en.wikipedia.org/wiki/1996_Argentine_Grand_Prix"
+  },
+  {
+    "year": 1996,
+    "round": 4,
+    "name": "European Grand Prix",
+    "date": "1996-04-28",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/1996_European_Grand_Prix"
+  },
+  {
+    "year": 1996,
+    "round": 5,
+    "name": "San Marino Grand Prix",
+    "date": "1996-05-05",
+    "time": null,
+    "circuitId": "imola",
+    "url": "https://en.wikipedia.org/wiki/1996_San_Marino_Grand_Prix"
+  },
+  {
+    "year": 1996,
+    "round": 6,
+    "name": "Monaco Grand Prix",
+    "date": "1996-05-19",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1996_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1996,
+    "round": 7,
+    "name": "Spanish Grand Prix",
+    "date": "1996-06-02",
+    "time": null,
+    "circuitId": "catalunya",
+    "url": "https://en.wikipedia.org/wiki/1996_Spanish_Grand_Prix"
+  },
+  {
+    "year": 1996,
+    "round": 8,
+    "name": "Canadian Grand Prix",
+    "date": "1996-06-16",
+    "time": null,
+    "circuitId": "villeneuve",
+    "url": "https://en.wikipedia.org/wiki/1996_Canadian_Grand_Prix"
+  },
+  {
+    "year": 1996,
+    "round": 9,
+    "name": "French Grand Prix",
+    "date": "1996-06-30",
+    "time": null,
+    "circuitId": "magny_cours",
+    "url": "https://en.wikipedia.org/wiki/1996_French_Grand_Prix"
+  },
+  {
+    "year": 1996,
+    "round": 10,
+    "name": "British Grand Prix",
+    "date": "1996-07-14",
+    "time": null,
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/1996_British_Grand_Prix"
+  },
+  {
+    "year": 1996,
+    "round": 11,
+    "name": "German Grand Prix",
+    "date": "1996-07-28",
+    "time": null,
+    "circuitId": "hockenheimring",
+    "url": "https://en.wikipedia.org/wiki/1996_German_Grand_Prix"
+  },
+  {
+    "year": 1996,
+    "round": 12,
+    "name": "Hungarian Grand Prix",
+    "date": "1996-08-11",
+    "time": null,
+    "circuitId": "hungaroring",
+    "url": "https://en.wikipedia.org/wiki/1996_Hungarian_Grand_Prix"
+  },
+  {
+    "year": 1996,
+    "round": 13,
+    "name": "Belgian Grand Prix",
+    "date": "1996-08-25",
+    "time": null,
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/1996_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1996,
+    "round": 14,
+    "name": "Italian Grand Prix",
+    "date": "1996-09-08",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1996_Italian_Grand_Prix"
+  },
+  {
+    "year": 1996,
+    "round": 15,
+    "name": "Portuguese Grand Prix",
+    "date": "1996-09-22",
+    "time": null,
+    "circuitId": "estoril",
+    "url": "https://en.wikipedia.org/wiki/1996_Portuguese_Grand_Prix"
+  },
+  {
+    "year": 1996,
+    "round": 16,
+    "name": "Japanese Grand Prix",
+    "date": "1996-10-13",
+    "time": null,
+    "circuitId": "suzuka",
+    "url": "https://en.wikipedia.org/wiki/1996_Japanese_Grand_Prix"
+  }
+]

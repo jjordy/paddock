@@ -1,0 +1,164 @@
+[
+  {
+    "year": 2006,
+    "round": 1,
+    "name": "Bahrain Grand Prix",
+    "date": "2006-03-12",
+    "time": "14:30:00Z",
+    "circuitId": "bahrain",
+    "url": "https://en.wikipedia.org/wiki/2006_Bahrain_Grand_Prix"
+  },
+  {
+    "year": 2006,
+    "round": 2,
+    "name": "Malaysian Grand Prix",
+    "date": "2006-03-19",
+    "time": "15:00:00Z",
+    "circuitId": "sepang",
+    "url": "https://en.wikipedia.org/wiki/2006_Malaysian_Grand_Prix"
+  },
+  {
+    "year": 2006,
+    "round": 3,
+    "name": "Australian Grand Prix",
+    "date": "2006-04-02",
+    "time": "14:00:00Z",
+    "circuitId": "albert_park",
+    "url": "https://en.wikipedia.org/wiki/2006_Australian_Grand_Prix"
+  },
+  {
+    "year": 2006,
+    "round": 4,
+    "name": "San Marino Grand Prix",
+    "date": "2006-04-23",
+    "time": "14:00:00Z",
+    "circuitId": "imola",
+    "url": "https://en.wikipedia.org/wiki/2006_San_Marino_Grand_Prix"
+  },
+  {
+    "year": 2006,
+    "round": 5,
+    "name": "European Grand Prix",
+    "date": "2006-05-07",
+    "time": "14:00:00Z",
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/2006_European_Grand_Prix"
+  },
+  {
+    "year": 2006,
+    "round": 6,
+    "name": "Spanish Grand Prix",
+    "date": "2006-05-14",
+    "time": "14:00:00Z",
+    "circuitId": "catalunya",
+    "url": "https://en.wikipedia.org/wiki/2006_Spanish_Grand_Prix"
+  },
+  {
+    "year": 2006,
+    "round": 7,
+    "name": "Monaco Grand Prix",
+    "date": "2006-05-28",
+    "time": "14:00:00Z",
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/2006_Monaco_Grand_Prix"
+  },
+  {
+    "year": 2006,
+    "round": 8,
+    "name": "British Grand Prix",
+    "date": "2006-06-11",
+    "time": "12:00:00Z",
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/2006_British_Grand_Prix"
+  },
+  {
+    "year": 2006,
+    "round": 9,
+    "name": "Canadian Grand Prix",
+    "date": "2006-06-25",
+    "time": "13:00:00Z",
+    "circuitId": "villeneuve",
+    "url": "https://en.wikipedia.org/wiki/2006_Canadian_Grand_Prix"
+  },
+  {
+    "year": 2006,
+    "round": 10,
+    "name": "United States Grand Prix",
+    "date": "2006-07-02",
+    "time": "14:00:00Z",
+    "circuitId": "indianapolis",
+    "url": "https://en.wikipedia.org/wiki/2006_United_States_Grand_Prix"
+  },
+  {
+    "year": 2006,
+    "round": 11,
+    "name": "French Grand Prix",
+    "date": "2006-07-16",
+    "time": "14:00:00Z",
+    "circuitId": "magny_cours",
+    "url": "https://en.wikipedia.org/wiki/2006_French_Grand_Prix"
+  },
+  {
+    "year": 2006,
+    "round": 12,
+    "name": "German Grand Prix",
+    "date": "2006-07-30",
+    "time": "14:00:00Z",
+    "circuitId": "hockenheimring",
+    "url": "https://en.wikipedia.org/wiki/2006_German_Grand_Prix"
+  },
+  {
+    "year": 2006,
+    "round": 13,
+    "name": "Hungarian Grand Prix",
+    "date": "2006-08-06",
+    "time": "14:00:00Z",
+    "circuitId": "hungaroring",
+    "url": "https://en.wikipedia.org/wiki/2006_Hungarian_Grand_Prix"
+  },
+  {
+    "year": 2006,
+    "round": 14,
+    "name": "Turkish Grand Prix",
+    "date": "2006-08-27",
+    "time": "15:00:00Z",
+    "circuitId": "istanbul",
+    "url": "https://en.wikipedia.org/wiki/2006_Turkish_Grand_Prix"
+  },
+  {
+    "year": 2006,
+    "round": 15,
+    "name": "Italian Grand Prix",
+    "date": "2006-09-10",
+    "time": "14:00:00Z",
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/2006_Italian_Grand_Prix"
+  },
+  {
+    "year": 2006,
+    "round": 16,
+    "name": "Chinese Grand Prix",
+    "date": "2006-10-01",
+    "time": "14:00:00Z",
+    "circuitId": "shanghai",
+    "url": "https://en.wikipedia.org/wiki/2006_Chinese_Grand_Prix"
+  },
+  {
+    "year": 2006,
+    "round": 17,
+    "name": "Japanese Grand Prix",
+    "date": "2006-10-08",
+    "time": "14:00:00Z",
+    "circuitId": "suzuka",
+    "url": "https://en.wikipedia.org/wiki/2006_Japanese_Grand_Prix"
+  },
+  {
+    "year": 2006,
+    "round": 18,
+    "name": "Brazilian Grand Prix",
+    "date": "2006-10-22",
+    "time": "14:00:00Z",
+    "circuitId": "interlagos",
+    "url": "https://en.wikipedia.org/wiki/2006_Brazilian_Grand_Prix"
+  }
+]

@@ -1,0 +1,155 @@
+[
+  {
+    "year": 2020,
+    "round": 1,
+    "name": "Austrian Grand Prix",
+    "date": "2020-07-05",
+    "time": "13:10:00Z",
+    "circuitId": "red_bull_ring",
+    "url": "https://en.wikipedia.org/wiki/2020_Austrian_Grand_Prix"
+  },
+  {
+    "year": 2020,
+    "round": 2,
+    "name": "Styrian Grand Prix",
+    "date": "2020-07-12",
+    "time": "13:10:00Z",
+    "circuitId": "red_bull_ring",
+    "url": "https://en.wikipedia.org/wiki/2020_Styrian_Grand_Prix"
+  },
+  {
+    "year": 2020,
+    "round": 3,
+    "name": "Hungarian Grand Prix",
+    "date": "2020-07-19",
+    "time": "13:10:00Z",
+    "circuitId": "hungaroring",
+    "url": "https://en.wikipedia.org/wiki/2020_Hungarian_Grand_Prix"
+  },
+  {
+    "year": 2020,
+    "round": 4,
+    "name": "British Grand Prix",
+    "date": "2020-08-02",
+    "time": "13:10:00Z",
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/2020_British_Grand_Prix"
+  },
+  {
+    "year": 2020,
+    "round": 5,
+    "name": "70th Anniversary Grand Prix",
+    "date": "2020-08-09",
+    "time": "13:10:00Z",
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/70th_Anniversary_Grand_Prix"
+  },
+  {
+    "year": 2020,
+    "round": 6,
+    "name": "Spanish Grand Prix",
+    "date": "2020-08-16",
+    "time": "13:10:00Z",
+    "circuitId": "catalunya",
+    "url": "https://en.wikipedia.org/wiki/2020_Spanish_Grand_Prix"
+  },
+  {
+    "year": 2020,
+    "round": 7,
+    "name": "Belgian Grand Prix",
+    "date": "2020-08-30",
+    "time": "13:10:00Z",
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/2020_Belgian_Grand_Prix"
+  },
+  {
+    "year": 2020,
+    "round": 8,
+    "name": "Italian Grand Prix",
+    "date": "2020-09-06",
+    "time": "13:10:00Z",
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/2020_Italian_Grand_Prix"
+  },
+  {
+    "year": 2020,
+    "round": 9,
+    "name": "Tuscan Grand Prix",
+    "date": "2020-09-13",
+    "time": "13:10:00Z",
+    "circuitId": "mugello",
+    "url": "https://en.wikipedia.org/wiki/2020_Tuscan_Grand_Prix"
+  },
+  {
+    "year": 2020,
+    "round": 10,
+    "name": "Russian Grand Prix",
+    "date": "2020-09-27",
+    "time": "11:10:00Z",
+    "circuitId": "sochi",
+    "url": "https://en.wikipedia.org/wiki/2020_Russian_Grand_Prix"
+  },
+  {
+    "year": 2020,
+    "round": 11,
+    "name": "Eifel Grand Prix",
+    "date": "2020-10-11",
+    "time": "13:10:00Z",
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/2020_Eifel_Grand_Prix"
+  },
+  {
+    "year": 2020,
+    "round": 12,
+    "name": "Portuguese Grand Prix",
+    "date": "2020-10-25",
+    "time": "12:10:00Z",
+    "circuitId": "portimao",
+    "url": "https://en.wikipedia.org/wiki/2020_Portuguese_Grand_Prix"
+  },
+  {
+    "year": 2020,
+    "round": 13,
+    "name": "Emilia Romagna Grand Prix",
+    "date": "2020-11-01",
+    "time": "12:10:00Z",
+    "circuitId": "imola",
+    "url": "https://en.wikipedia.org/wiki/2020_Emilia_Romagna_Grand_Prix"
+  },
+  {
+    "year": 2020,
+    "round": 14,
+    "name": "Turkish Grand Prix",
+    "date": "2020-11-15",
+    "time": "10:10:00Z",
+    "circuitId": "istanbul",
+    "url": "https://en.wikipedia.org/wiki/2020_Turkish_Grand_Prix"
+  },
+  {
+    "year": 2020,
+    "round": 15,
+    "name": "Bahrain Grand Prix",
+    "date": "2020-11-29",
+    "time": "14:10:00Z",
+    "circuitId": "bahrain",
+    "url": "https://en.wikipedia.org/wiki/2020_Bahrain_Grand_Prix"
+  },
+  {
+    "year": 2020,
+    "round": 16,
+    "name": "Sakhir Grand Prix",
+    "date": "2020-12-06",
+    "time": "17:10:00Z",
+    "circuitId": "bahrain",
+    "url": "https://en.wikipedia.org/wiki/2020_Sakhir_Grand_Prix"
+  },
+  {
+    "year": 2020,
+    "round": 17,
+    "name": "Abu Dhabi Grand Prix",
+    "date": "2020-12-13",
+    "time": "13:10:00Z",
+    "circuitId": "yas_marina",
+    "url": "https://en.wikipedia.org/wiki/2020_Abu_Dhabi_Grand_Prix"
+  }
+]

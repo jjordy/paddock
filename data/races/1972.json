@@ -1,0 +1,110 @@
+[
+  {
+    "year": 1972,
+    "round": 1,
+    "name": "Argentine Grand Prix",
+    "date": "1972-01-23",
+    "time": null,
+    "circuitId": "galvez",
+    "url": "https://en.wikipedia.org/wiki/1972_Argentine_Grand_Prix"
+  },
+  {
+    "year": 1972,
+    "round": 2,
+    "name": "South African Grand Prix",
+    "date": "1972-03-04",
+    "time": null,
+    "circuitId": "kyalami",
+    "url": "https://en.wikipedia.org/wiki/1972_South_African_Grand_Prix"
+  },
+  {
+    "year": 1972,
+    "round": 3,
+    "name": "Spanish Grand Prix",
+    "date": "1972-05-01",
+    "time": null,
+    "circuitId": "jarama",
+    "url": "https://en.wikipedia.org/wiki/1972_Spanish_Grand_Prix"
+  },
+  {
+    "year": 1972,
+    "round": 4,
+    "name": "Monaco Grand Prix",
+    "date": "1972-05-14",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1972_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1972,
+    "round": 5,
+    "name": "Belgian Grand Prix",
+    "date": "1972-06-04",
+    "time": null,
+    "circuitId": "nivelles",
+    "url": "https://en.wikipedia.org/wiki/1972_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1972,
+    "round": 6,
+    "name": "French Grand Prix",
+    "date": "1972-07-02",
+    "time": null,
+    "circuitId": "charade",
+    "url": "https://en.wikipedia.org/wiki/1972_French_Grand_Prix"
+  },
+  {
+    "year": 1972,
+    "round": 7,
+    "name": "British Grand Prix",
+    "date": "1972-07-15",
+    "time": null,
+    "circuitId": "brands_hatch",
+    "url": "https://en.wikipedia.org/wiki/1972_British_Grand_Prix"
+  },
+  {
+    "year": 1972,
+    "round": 8,
+    "name": "German Grand Prix",
+    "date": "1972-07-30",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/1972_German_Grand_Prix"
+  },
+  {
+    "year": 1972,
+    "round": 9,
+    "name": "Austrian Grand Prix",
+    "date": "1972-08-13",
+    "time": null,
+    "circuitId": "red_bull_ring",
+    "url": "https://en.wikipedia.org/wiki/1972_Austrian_Grand_Prix"
+  },
+  {
+    "year": 1972,
+    "round": 10,
+    "name": "Italian Grand Prix",
+    "date": "1972-09-10",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1972_Italian_Grand_Prix"
+  },
+  {
+    "year": 1972,
+    "round": 11,
+    "name": "Canadian Grand Prix",
+    "date": "1972-09-24",
+    "time": null,
+    "circuitId": "mosport",
+    "url": "https://en.wikipedia.org/wiki/1972_Canadian_Grand_Prix"
+  },
+  {
+    "year": 1972,
+    "round": 12,
+    "name": "United States Grand Prix",
+    "date": "1972-10-08",
+    "time": null,
+    "circuitId": "watkins_glen",
+    "url": "https://en.wikipedia.org/wiki/1972_United_States_Grand_Prix"
+  }
+]

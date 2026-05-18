@@ -1,0 +1,155 @@
+[
+  {
+    "year": 1995,
+    "round": 1,
+    "name": "Brazilian Grand Prix",
+    "date": "1995-03-26",
+    "time": null,
+    "circuitId": "interlagos",
+    "url": "https://en.wikipedia.org/wiki/1995_Brazilian_Grand_Prix"
+  },
+  {
+    "year": 1995,
+    "round": 2,
+    "name": "Argentine Grand Prix",
+    "date": "1995-04-09",
+    "time": null,
+    "circuitId": "galvez",
+    "url": "https://en.wikipedia.org/wiki/1995_Argentine_Grand_Prix"
+  },
+  {
+    "year": 1995,
+    "round": 3,
+    "name": "San Marino Grand Prix",
+    "date": "1995-04-30",
+    "time": null,
+    "circuitId": "imola",
+    "url": "https://en.wikipedia.org/wiki/1995_San_Marino_Grand_Prix"
+  },
+  {
+    "year": 1995,
+    "round": 4,
+    "name": "Spanish Grand Prix",
+    "date": "1995-05-14",
+    "time": null,
+    "circuitId": "catalunya",
+    "url": "https://en.wikipedia.org/wiki/1995_Spanish_Grand_Prix"
+  },
+  {
+    "year": 1995,
+    "round": 5,
+    "name": "Monaco Grand Prix",
+    "date": "1995-05-28",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1995_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1995,
+    "round": 6,
+    "name": "Canadian Grand Prix",
+    "date": "1995-06-11",
+    "time": null,
+    "circuitId": "villeneuve",
+    "url": "https://en.wikipedia.org/wiki/1995_Canadian_Grand_Prix"
+  },
+  {
+    "year": 1995,
+    "round": 7,
+    "name": "French Grand Prix",
+    "date": "1995-07-02",
+    "time": null,
+    "circuitId": "magny_cours",
+    "url": "https://en.wikipedia.org/wiki/1995_French_Grand_Prix"
+  },
+  {
+    "year": 1995,
+    "round": 8,
+    "name": "British Grand Prix",
+    "date": "1995-07-16",
+    "time": null,
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/1995_British_Grand_Prix"
+  },
+  {
+    "year": 1995,
+    "round": 9,
+    "name": "German Grand Prix",
+    "date": "1995-07-30",
+    "time": null,
+    "circuitId": "hockenheimring",
+    "url": "https://en.wikipedia.org/wiki/1995_German_Grand_Prix"
+  },
+  {
+    "year": 1995,
+    "round": 10,
+    "name": "Hungarian Grand Prix",
+    "date": "1995-08-13",
+    "time": null,
+    "circuitId": "hungaroring",
+    "url": "https://en.wikipedia.org/wiki/1995_Hungarian_Grand_Prix"
+  },
+  {
+    "year": 1995,
+    "round": 11,
+    "name": "Belgian Grand Prix",
+    "date": "1995-08-27",
+    "time": null,
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/1995_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1995,
+    "round": 12,
+    "name": "Italian Grand Prix",
+    "date": "1995-09-10",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1995_Italian_Grand_Prix"
+  },
+  {
+    "year": 1995,
+    "round": 13,
+    "name": "Portuguese Grand Prix",
+    "date": "1995-09-24",
+    "time": null,
+    "circuitId": "estoril",
+    "url": "https://en.wikipedia.org/wiki/1995_Portuguese_Grand_Prix"
+  },
+  {
+    "year": 1995,
+    "round": 14,
+    "name": "European Grand Prix",
+    "date": "1995-10-01",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/1995_European_Grand_Prix"
+  },
+  {
+    "year": 1995,
+    "round": 15,
+    "name": "Pacific Grand Prix",
+    "date": "1995-10-22",
+    "time": null,
+    "circuitId": "okayama",
+    "url": "https://en.wikipedia.org/wiki/1995_Pacific_Grand_Prix"
+  },
+  {
+    "year": 1995,
+    "round": 16,
+    "name": "Japanese Grand Prix",
+    "date": "1995-10-29",
+    "time": null,
+    "circuitId": "suzuka",
+    "url": "https://en.wikipedia.org/wiki/1995_Japanese_Grand_Prix"
+  },
+  {
+    "year": 1995,
+    "round": 17,
+    "name": "Australian Grand Prix",
+    "date": "1995-11-12",
+    "time": null,
+    "circuitId": "adelaide",
+    "url": "https://en.wikipedia.org/wiki/1995_Australian_Grand_Prix"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "year": 1967,
+    "round": 1,
+    "name": "South African Grand Prix",
+    "date": "1967-01-02",
+    "time": null,
+    "circuitId": "kyalami",
+    "url": "https://en.wikipedia.org/wiki/1967_South_African_Grand_Prix"
+  },
+  {
+    "year": 1967,
+    "round": 2,
+    "name": "Monaco Grand Prix",
+    "date": "1967-05-07",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1967_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1967,
+    "round": 3,
+    "name": "Dutch Grand Prix",
+    "date": "1967-06-04",
+    "time": null,
+    "circuitId": "zandvoort",
+    "url": "https://en.wikipedia.org/wiki/1967_Dutch_Grand_Prix"
+  },
+  {
+    "year": 1967,
+    "round": 4,
+    "name": "Belgian Grand Prix",
+    "date": "1967-06-18",
+    "time": null,
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/1967_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1967,
+    "round": 5,
+    "name": "French Grand Prix",
+    "date": "1967-07-02",
+    "time": null,
+    "circuitId": "lemans",
+    "url": "https://en.wikipedia.org/wiki/1967_French_Grand_Prix"
+  },
+  {
+    "year": 1967,
+    "round": 6,
+    "name": "British Grand Prix",
+    "date": "1967-07-15",
+    "time": null,
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/1967_British_Grand_Prix"
+  },
+  {
+    "year": 1967,
+    "round": 7,
+    "name": "German Grand Prix",
+    "date": "1967-08-06",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/1967_German_Grand_Prix"
+  },
+  {
+    "year": 1967,
+    "round": 8,
+    "name": "Canadian Grand Prix",
+    "date": "1967-08-27",
+    "time": null,
+    "circuitId": "mosport",
+    "url": "https://en.wikipedia.org/wiki/1967_Canadian_Grand_Prix"
+  },
+  {
+    "year": 1967,
+    "round": 9,
+    "name": "Italian Grand Prix",
+    "date": "1967-09-10",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1967_Italian_Grand_Prix"
+  },
+  {
+    "year": 1967,
+    "round": 10,
+    "name": "United States Grand Prix",
+    "date": "1967-10-01",
+    "time": null,
+    "circuitId": "watkins_glen",
+    "url": "https://en.wikipedia.org/wiki/1967_United_States_Grand_Prix"
+  },
+  {
+    "year": 1967,
+    "round": 11,
+    "name": "Mexican Grand Prix",
+    "date": "1967-10-22",
+    "time": null,
+    "circuitId": "rodriguez",
+    "url": "https://en.wikipedia.org/wiki/1967_Mexican_Grand_Prix"
+  }
+]

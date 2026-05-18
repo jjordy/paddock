@@ -1,0 +1,83 @@
+[
+  {
+    "year": 1962,
+    "round": 1,
+    "name": "Dutch Grand Prix",
+    "date": "1962-05-20",
+    "time": null,
+    "circuitId": "zandvoort",
+    "url": "https://en.wikipedia.org/wiki/1962_Dutch_Grand_Prix"
+  },
+  {
+    "year": 1962,
+    "round": 2,
+    "name": "Monaco Grand Prix",
+    "date": "1962-06-03",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1962_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1962,
+    "round": 3,
+    "name": "Belgian Grand Prix",
+    "date": "1962-06-17",
+    "time": null,
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/1962_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1962,
+    "round": 4,
+    "name": "French Grand Prix",
+    "date": "1962-07-08",
+    "time": null,
+    "circuitId": "essarts",
+    "url": "https://en.wikipedia.org/wiki/1962_French_Grand_Prix"
+  },
+  {
+    "year": 1962,
+    "round": 5,
+    "name": "British Grand Prix",
+    "date": "1962-07-21",
+    "time": null,
+    "circuitId": "aintree",
+    "url": "https://en.wikipedia.org/wiki/1962_British_Grand_Prix"
+  },
+  {
+    "year": 1962,
+    "round": 6,
+    "name": "German Grand Prix",
+    "date": "1962-08-05",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/1962_German_Grand_Prix"
+  },
+  {
+    "year": 1962,
+    "round": 7,
+    "name": "Italian Grand Prix",
+    "date": "1962-09-16",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1962_Italian_Grand_Prix"
+  },
+  {
+    "year": 1962,
+    "round": 8,
+    "name": "United States Grand Prix",
+    "date": "1962-10-07",
+    "time": null,
+    "circuitId": "watkins_glen",
+    "url": "https://en.wikipedia.org/wiki/1962_United_States_Grand_Prix"
+  },
+  {
+    "year": 1962,
+    "round": 9,
+    "name": "South African Grand Prix",
+    "date": "1962-12-29",
+    "time": null,
+    "circuitId": "george",
+    "url": "https://en.wikipedia.org/wiki/1962_South_African_Grand_Prix"
+  }
+]

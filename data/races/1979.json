@@ -1,0 +1,137 @@
+[
+  {
+    "year": 1979,
+    "round": 1,
+    "name": "Argentine Grand Prix",
+    "date": "1979-01-21",
+    "time": null,
+    "circuitId": "galvez",
+    "url": "https://en.wikipedia.org/wiki/1979_Argentine_Grand_Prix"
+  },
+  {
+    "year": 1979,
+    "round": 2,
+    "name": "Brazilian Grand Prix",
+    "date": "1979-02-04",
+    "time": null,
+    "circuitId": "interlagos",
+    "url": "https://en.wikipedia.org/wiki/1979_Brazilian_Grand_Prix"
+  },
+  {
+    "year": 1979,
+    "round": 3,
+    "name": "South African Grand Prix",
+    "date": "1979-03-03",
+    "time": null,
+    "circuitId": "kyalami",
+    "url": "https://en.wikipedia.org/wiki/1979_South_African_Grand_Prix"
+  },
+  {
+    "year": 1979,
+    "round": 4,
+    "name": "United States Grand Prix West",
+    "date": "1979-04-08",
+    "time": null,
+    "circuitId": "long_beach",
+    "url": "https://en.wikipedia.org/wiki/1979_United_States_Grand_Prix_West"
+  },
+  {
+    "year": 1979,
+    "round": 5,
+    "name": "Spanish Grand Prix",
+    "date": "1979-04-29",
+    "time": null,
+    "circuitId": "jarama",
+    "url": "https://en.wikipedia.org/wiki/1979_Spanish_Grand_Prix"
+  },
+  {
+    "year": 1979,
+    "round": 6,
+    "name": "Belgian Grand Prix",
+    "date": "1979-05-13",
+    "time": null,
+    "circuitId": "zolder",
+    "url": "https://en.wikipedia.org/wiki/1979_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1979,
+    "round": 7,
+    "name": "Monaco Grand Prix",
+    "date": "1979-05-27",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1979_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1979,
+    "round": 8,
+    "name": "French Grand Prix",
+    "date": "1979-07-01",
+    "time": null,
+    "circuitId": "dijon",
+    "url": "https://en.wikipedia.org/wiki/1979_French_Grand_Prix"
+  },
+  {
+    "year": 1979,
+    "round": 9,
+    "name": "British Grand Prix",
+    "date": "1979-07-14",
+    "time": null,
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/1979_British_Grand_Prix"
+  },
+  {
+    "year": 1979,
+    "round": 10,
+    "name": "German Grand Prix",
+    "date": "1979-07-29",
+    "time": null,
+    "circuitId": "hockenheimring",
+    "url": "https://en.wikipedia.org/wiki/1979_German_Grand_Prix"
+  },
+  {
+    "year": 1979,
+    "round": 11,
+    "name": "Austrian Grand Prix",
+    "date": "1979-08-12",
+    "time": null,
+    "circuitId": "red_bull_ring",
+    "url": "https://en.wikipedia.org/wiki/1979_Austrian_Grand_Prix"
+  },
+  {
+    "year": 1979,
+    "round": 12,
+    "name": "Dutch Grand Prix",
+    "date": "1979-08-26",
+    "time": null,
+    "circuitId": "zandvoort",
+    "url": "https://en.wikipedia.org/wiki/1979_Dutch_Grand_Prix"
+  },
+  {
+    "year": 1979,
+    "round": 13,
+    "name": "Italian Grand Prix",
+    "date": "1979-09-09",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1979_Italian_Grand_Prix"
+  },
+  {
+    "year": 1979,
+    "round": 14,
+    "name": "Canadian Grand Prix",
+    "date": "1979-09-30",
+    "time": null,
+    "circuitId": "villeneuve",
+    "url": "https://en.wikipedia.org/wiki/1979_Canadian_Grand_Prix"
+  },
+  {
+    "year": 1979,
+    "round": 15,
+    "name": "United States Grand Prix",
+    "date": "1979-10-07",
+    "time": null,
+    "circuitId": "watkins_glen",
+    "url": "https://en.wikipedia.org/wiki/1979_United_States_Grand_Prix"
+  }
+]

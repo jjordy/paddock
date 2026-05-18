@@ -1,0 +1,74 @@
+[
+  {
+    "year": 1961,
+    "round": 1,
+    "name": "Monaco Grand Prix",
+    "date": "1961-05-14",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1961_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1961,
+    "round": 2,
+    "name": "Dutch Grand Prix",
+    "date": "1961-05-22",
+    "time": null,
+    "circuitId": "zandvoort",
+    "url": "https://en.wikipedia.org/wiki/1961_Dutch_Grand_Prix"
+  },
+  {
+    "year": 1961,
+    "round": 3,
+    "name": "Belgian Grand Prix",
+    "date": "1961-06-18",
+    "time": null,
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/1961_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1961,
+    "round": 4,
+    "name": "French Grand Prix",
+    "date": "1961-07-02",
+    "time": null,
+    "circuitId": "reims",
+    "url": "https://en.wikipedia.org/wiki/1961_French_Grand_Prix"
+  },
+  {
+    "year": 1961,
+    "round": 5,
+    "name": "British Grand Prix",
+    "date": "1961-07-15",
+    "time": null,
+    "circuitId": "aintree",
+    "url": "https://en.wikipedia.org/wiki/1961_British_Grand_Prix"
+  },
+  {
+    "year": 1961,
+    "round": 6,
+    "name": "German Grand Prix",
+    "date": "1961-08-06",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/1961_German_Grand_Prix"
+  },
+  {
+    "year": 1961,
+    "round": 7,
+    "name": "Italian Grand Prix",
+    "date": "1961-09-10",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1961_Italian_Grand_Prix"
+  },
+  {
+    "year": 1961,
+    "round": 8,
+    "name": "United States Grand Prix",
+    "date": "1961-10-08",
+    "time": null,
+    "circuitId": "watkins_glen",
+    "url": "https://en.wikipedia.org/wiki/1961_United_States_Grand_Prix"
+  }
+]

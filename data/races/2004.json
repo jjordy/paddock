@@ -1,0 +1,164 @@
+[
+  {
+    "year": 2004,
+    "round": 1,
+    "name": "Australian Grand Prix",
+    "date": "2004-03-07",
+    "time": null,
+    "circuitId": "albert_park",
+    "url": "https://en.wikipedia.org/wiki/2004_Australian_Grand_Prix"
+  },
+  {
+    "year": 2004,
+    "round": 2,
+    "name": "Malaysian Grand Prix",
+    "date": "2004-03-21",
+    "time": null,
+    "circuitId": "sepang",
+    "url": "https://en.wikipedia.org/wiki/2004_Malaysian_Grand_Prix"
+  },
+  {
+    "year": 2004,
+    "round": 3,
+    "name": "Bahrain Grand Prix",
+    "date": "2004-04-04",
+    "time": null,
+    "circuitId": "bahrain",
+    "url": "https://en.wikipedia.org/wiki/2004_Bahrain_Grand_Prix"
+  },
+  {
+    "year": 2004,
+    "round": 4,
+    "name": "San Marino Grand Prix",
+    "date": "2004-04-25",
+    "time": null,
+    "circuitId": "imola",
+    "url": "https://en.wikipedia.org/wiki/2004_San_Marino_Grand_Prix"
+  },
+  {
+    "year": 2004,
+    "round": 5,
+    "name": "Spanish Grand Prix",
+    "date": "2004-05-09",
+    "time": null,
+    "circuitId": "catalunya",
+    "url": "https://en.wikipedia.org/wiki/2004_Spanish_Grand_Prix"
+  },
+  {
+    "year": 2004,
+    "round": 6,
+    "name": "Monaco Grand Prix",
+    "date": "2004-05-23",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/2004_Monaco_Grand_Prix"
+  },
+  {
+    "year": 2004,
+    "round": 7,
+    "name": "European Grand Prix",
+    "date": "2004-05-30",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/2004_European_Grand_Prix"
+  },
+  {
+    "year": 2004,
+    "round": 8,
+    "name": "Canadian Grand Prix",
+    "date": "2004-06-13",
+    "time": null,
+    "circuitId": "villeneuve",
+    "url": "https://en.wikipedia.org/wiki/2004_Canadian_Grand_Prix"
+  },
+  {
+    "year": 2004,
+    "round": 9,
+    "name": "United States Grand Prix",
+    "date": "2004-06-20",
+    "time": null,
+    "circuitId": "indianapolis",
+    "url": "https://en.wikipedia.org/wiki/2004_United_States_Grand_Prix"
+  },
+  {
+    "year": 2004,
+    "round": 10,
+    "name": "French Grand Prix",
+    "date": "2004-07-04",
+    "time": null,
+    "circuitId": "magny_cours",
+    "url": "https://en.wikipedia.org/wiki/2004_French_Grand_Prix"
+  },
+  {
+    "year": 2004,
+    "round": 11,
+    "name": "British Grand Prix",
+    "date": "2004-07-11",
+    "time": null,
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/2004_British_Grand_Prix"
+  },
+  {
+    "year": 2004,
+    "round": 12,
+    "name": "German Grand Prix",
+    "date": "2004-07-25",
+    "time": null,
+    "circuitId": "hockenheimring",
+    "url": "https://en.wikipedia.org/wiki/2004_German_Grand_Prix"
+  },
+  {
+    "year": 2004,
+    "round": 13,
+    "name": "Hungarian Grand Prix",
+    "date": "2004-08-15",
+    "time": null,
+    "circuitId": "hungaroring",
+    "url": "https://en.wikipedia.org/wiki/2004_Hungarian_Grand_Prix"
+  },
+  {
+    "year": 2004,
+    "round": 14,
+    "name": "Belgian Grand Prix",
+    "date": "2004-08-29",
+    "time": null,
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/2004_Belgian_Grand_Prix"
+  },
+  {
+    "year": 2004,
+    "round": 15,
+    "name": "Italian Grand Prix",
+    "date": "2004-09-12",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/2004_Italian_Grand_Prix"
+  },
+  {
+    "year": 2004,
+    "round": 16,
+    "name": "Chinese Grand Prix",
+    "date": "2004-09-26",
+    "time": null,
+    "circuitId": "shanghai",
+    "url": "https://en.wikipedia.org/wiki/2004_Chinese_Grand_Prix"
+  },
+  {
+    "year": 2004,
+    "round": 17,
+    "name": "Japanese Grand Prix",
+    "date": "2004-10-10",
+    "time": null,
+    "circuitId": "suzuka",
+    "url": "https://en.wikipedia.org/wiki/2004_Japanese_Grand_Prix"
+  },
+  {
+    "year": 2004,
+    "round": 18,
+    "name": "Brazilian Grand Prix",
+    "date": "2004-10-24",
+    "time": null,
+    "circuitId": "interlagos",
+    "url": "https://en.wikipedia.org/wiki/2004_Brazilian_Grand_Prix"
+  }
+]

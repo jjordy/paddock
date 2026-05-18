@@ -1,0 +1,155 @@
+[
+  {
+    "year": 2002,
+    "round": 1,
+    "name": "Australian Grand Prix",
+    "date": "2002-03-03",
+    "time": null,
+    "circuitId": "albert_park",
+    "url": "https://en.wikipedia.org/wiki/2002_Australian_Grand_Prix"
+  },
+  {
+    "year": 2002,
+    "round": 2,
+    "name": "Malaysian Grand Prix",
+    "date": "2002-03-17",
+    "time": null,
+    "circuitId": "sepang",
+    "url": "https://en.wikipedia.org/wiki/2002_Malaysian_Grand_Prix"
+  },
+  {
+    "year": 2002,
+    "round": 3,
+    "name": "Brazilian Grand Prix",
+    "date": "2002-03-31",
+    "time": null,
+    "circuitId": "interlagos",
+    "url": "https://en.wikipedia.org/wiki/2002_Brazilian_Grand_Prix"
+  },
+  {
+    "year": 2002,
+    "round": 4,
+    "name": "San Marino Grand Prix",
+    "date": "2002-04-14",
+    "time": null,
+    "circuitId": "imola",
+    "url": "https://en.wikipedia.org/wiki/2002_San_Marino_Grand_Prix"
+  },
+  {
+    "year": 2002,
+    "round": 5,
+    "name": "Spanish Grand Prix",
+    "date": "2002-04-28",
+    "time": null,
+    "circuitId": "catalunya",
+    "url": "https://en.wikipedia.org/wiki/2002_Spanish_Grand_Prix"
+  },
+  {
+    "year": 2002,
+    "round": 6,
+    "name": "Austrian Grand Prix",
+    "date": "2002-05-12",
+    "time": null,
+    "circuitId": "red_bull_ring",
+    "url": "https://en.wikipedia.org/wiki/2002_Austrian_Grand_Prix"
+  },
+  {
+    "year": 2002,
+    "round": 7,
+    "name": "Monaco Grand Prix",
+    "date": "2002-05-26",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/2002_Monaco_Grand_Prix"
+  },
+  {
+    "year": 2002,
+    "round": 8,
+    "name": "Canadian Grand Prix",
+    "date": "2002-06-09",
+    "time": null,
+    "circuitId": "villeneuve",
+    "url": "https://en.wikipedia.org/wiki/2002_Canadian_Grand_Prix"
+  },
+  {
+    "year": 2002,
+    "round": 9,
+    "name": "European Grand Prix",
+    "date": "2002-06-23",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/2002_European_Grand_Prix"
+  },
+  {
+    "year": 2002,
+    "round": 10,
+    "name": "British Grand Prix",
+    "date": "2002-07-07",
+    "time": null,
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/2002_British_Grand_Prix"
+  },
+  {
+    "year": 2002,
+    "round": 11,
+    "name": "French Grand Prix",
+    "date": "2002-07-21",
+    "time": null,
+    "circuitId": "magny_cours",
+    "url": "https://en.wikipedia.org/wiki/2002_French_Grand_Prix"
+  },
+  {
+    "year": 2002,
+    "round": 12,
+    "name": "German Grand Prix",
+    "date": "2002-07-28",
+    "time": null,
+    "circuitId": "hockenheimring",
+    "url": "https://en.wikipedia.org/wiki/2002_German_Grand_Prix"
+  },
+  {
+    "year": 2002,
+    "round": 13,
+    "name": "Hungarian Grand Prix",
+    "date": "2002-08-18",
+    "time": null,
+    "circuitId": "hungaroring",
+    "url": "https://en.wikipedia.org/wiki/2002_Hungarian_Grand_Prix"
+  },
+  {
+    "year": 2002,
+    "round": 14,
+    "name": "Belgian Grand Prix",
+    "date": "2002-09-01",
+    "time": null,
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/2002_Belgian_Grand_Prix"
+  },
+  {
+    "year": 2002,
+    "round": 15,
+    "name": "Italian Grand Prix",
+    "date": "2002-09-15",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/2002_Italian_Grand_Prix"
+  },
+  {
+    "year": 2002,
+    "round": 16,
+    "name": "United States Grand Prix",
+    "date": "2002-09-29",
+    "time": null,
+    "circuitId": "indianapolis",
+    "url": "https://en.wikipedia.org/wiki/2002_United_States_Grand_Prix"
+  },
+  {
+    "year": 2002,
+    "round": 17,
+    "name": "Japanese Grand Prix",
+    "date": "2002-10-13",
+    "time": null,
+    "circuitId": "suzuka",
+    "url": "https://en.wikipedia.org/wiki/2002_Japanese_Grand_Prix"
+  }
+]

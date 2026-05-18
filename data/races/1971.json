@@ -1,0 +1,101 @@
+[
+  {
+    "year": 1971,
+    "round": 1,
+    "name": "South African Grand Prix",
+    "date": "1971-03-06",
+    "time": null,
+    "circuitId": "kyalami",
+    "url": "https://en.wikipedia.org/wiki/1971_South_African_Grand_Prix"
+  },
+  {
+    "year": 1971,
+    "round": 2,
+    "name": "Spanish Grand Prix",
+    "date": "1971-04-18",
+    "time": null,
+    "circuitId": "montjuic",
+    "url": "https://en.wikipedia.org/wiki/1971_Spanish_Grand_Prix"
+  },
+  {
+    "year": 1971,
+    "round": 3,
+    "name": "Monaco Grand Prix",
+    "date": "1971-05-23",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1971_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1971,
+    "round": 4,
+    "name": "Dutch Grand Prix",
+    "date": "1971-06-20",
+    "time": null,
+    "circuitId": "zandvoort",
+    "url": "https://en.wikipedia.org/wiki/1971_Dutch_Grand_Prix"
+  },
+  {
+    "year": 1971,
+    "round": 5,
+    "name": "French Grand Prix",
+    "date": "1971-07-04",
+    "time": null,
+    "circuitId": "ricard",
+    "url": "https://en.wikipedia.org/wiki/1971_French_Grand_Prix"
+  },
+  {
+    "year": 1971,
+    "round": 6,
+    "name": "British Grand Prix",
+    "date": "1971-07-17",
+    "time": null,
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/1971_British_Grand_Prix"
+  },
+  {
+    "year": 1971,
+    "round": 7,
+    "name": "German Grand Prix",
+    "date": "1971-08-01",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/1971_German_Grand_Prix"
+  },
+  {
+    "year": 1971,
+    "round": 8,
+    "name": "Austrian Grand Prix",
+    "date": "1971-08-15",
+    "time": null,
+    "circuitId": "red_bull_ring",
+    "url": "https://en.wikipedia.org/wiki/1971_Austrian_Grand_Prix"
+  },
+  {
+    "year": 1971,
+    "round": 9,
+    "name": "Italian Grand Prix",
+    "date": "1971-09-05",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1971_Italian_Grand_Prix"
+  },
+  {
+    "year": 1971,
+    "round": 10,
+    "name": "Canadian Grand Prix",
+    "date": "1971-09-19",
+    "time": null,
+    "circuitId": "mosport",
+    "url": "https://en.wikipedia.org/wiki/1971_Canadian_Grand_Prix"
+  },
+  {
+    "year": 1971,
+    "round": 11,
+    "name": "United States Grand Prix",
+    "date": "1971-10-03",
+    "time": null,
+    "circuitId": "watkins_glen",
+    "url": "https://en.wikipedia.org/wiki/1971_United_States_Grand_Prix"
+  }
+]

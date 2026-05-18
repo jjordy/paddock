@@ -1,0 +1,74 @@
+[
+  {
+    "year": 1956,
+    "round": 1,
+    "name": "Argentine Grand Prix",
+    "date": "1956-01-22",
+    "time": null,
+    "circuitId": "galvez",
+    "url": "https://en.wikipedia.org/wiki/1956_Argentine_Grand_Prix"
+  },
+  {
+    "year": 1956,
+    "round": 2,
+    "name": "Monaco Grand Prix",
+    "date": "1956-05-13",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1956_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1956,
+    "round": 3,
+    "name": "Indianapolis 500",
+    "date": "1956-05-30",
+    "time": null,
+    "circuitId": "indianapolis",
+    "url": "https://en.wikipedia.org/wiki/1956_Indianapolis_500"
+  },
+  {
+    "year": 1956,
+    "round": 4,
+    "name": "Belgian Grand Prix",
+    "date": "1956-06-03",
+    "time": null,
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/1956_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1956,
+    "round": 5,
+    "name": "French Grand Prix",
+    "date": "1956-07-01",
+    "time": null,
+    "circuitId": "reims",
+    "url": "https://en.wikipedia.org/wiki/1956_French_Grand_Prix"
+  },
+  {
+    "year": 1956,
+    "round": 6,
+    "name": "British Grand Prix",
+    "date": "1956-07-14",
+    "time": null,
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/1956_British_Grand_Prix"
+  },
+  {
+    "year": 1956,
+    "round": 7,
+    "name": "German Grand Prix",
+    "date": "1956-08-05",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/1956_German_Grand_Prix"
+  },
+  {
+    "year": 1956,
+    "round": 8,
+    "name": "Italian Grand Prix",
+    "date": "1956-09-02",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1956_Italian_Grand_Prix"
+  }
+]

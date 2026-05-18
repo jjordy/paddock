@@ -1,0 +1,146 @@
+[
+  {
+    "year": 1986,
+    "round": 1,
+    "name": "Brazilian Grand Prix",
+    "date": "1986-03-23",
+    "time": null,
+    "circuitId": "jacarepagua",
+    "url": "https://en.wikipedia.org/wiki/1986_Brazilian_Grand_Prix"
+  },
+  {
+    "year": 1986,
+    "round": 2,
+    "name": "Spanish Grand Prix",
+    "date": "1986-04-13",
+    "time": null,
+    "circuitId": "jerez",
+    "url": "https://en.wikipedia.org/wiki/1986_Spanish_Grand_Prix"
+  },
+  {
+    "year": 1986,
+    "round": 3,
+    "name": "San Marino Grand Prix",
+    "date": "1986-04-27",
+    "time": null,
+    "circuitId": "imola",
+    "url": "https://en.wikipedia.org/wiki/1986_San_Marino_Grand_Prix"
+  },
+  {
+    "year": 1986,
+    "round": 4,
+    "name": "Monaco Grand Prix",
+    "date": "1986-05-11",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1986_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1986,
+    "round": 5,
+    "name": "Belgian Grand Prix",
+    "date": "1986-05-25",
+    "time": null,
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/1986_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1986,
+    "round": 6,
+    "name": "Canadian Grand Prix",
+    "date": "1986-06-15",
+    "time": null,
+    "circuitId": "villeneuve",
+    "url": "https://en.wikipedia.org/wiki/1986_Canadian_Grand_Prix"
+  },
+  {
+    "year": 1986,
+    "round": 7,
+    "name": "Detroit Grand Prix",
+    "date": "1986-06-22",
+    "time": null,
+    "circuitId": "detroit",
+    "url": "https://en.wikipedia.org/wiki/1986_Detroit_Grand_Prix"
+  },
+  {
+    "year": 1986,
+    "round": 8,
+    "name": "French Grand Prix",
+    "date": "1986-07-06",
+    "time": null,
+    "circuitId": "ricard",
+    "url": "https://en.wikipedia.org/wiki/1986_French_Grand_Prix"
+  },
+  {
+    "year": 1986,
+    "round": 9,
+    "name": "British Grand Prix",
+    "date": "1986-07-13",
+    "time": null,
+    "circuitId": "brands_hatch",
+    "url": "https://en.wikipedia.org/wiki/1986_British_Grand_Prix"
+  },
+  {
+    "year": 1986,
+    "round": 10,
+    "name": "German Grand Prix",
+    "date": "1986-07-27",
+    "time": null,
+    "circuitId": "hockenheimring",
+    "url": "https://en.wikipedia.org/wiki/1986_German_Grand_Prix"
+  },
+  {
+    "year": 1986,
+    "round": 11,
+    "name": "Hungarian Grand Prix",
+    "date": "1986-08-10",
+    "time": null,
+    "circuitId": "hungaroring",
+    "url": "https://en.wikipedia.org/wiki/1986_Hungarian_Grand_Prix"
+  },
+  {
+    "year": 1986,
+    "round": 12,
+    "name": "Austrian Grand Prix",
+    "date": "1986-08-17",
+    "time": null,
+    "circuitId": "red_bull_ring",
+    "url": "https://en.wikipedia.org/wiki/1986_Austrian_Grand_Prix"
+  },
+  {
+    "year": 1986,
+    "round": 13,
+    "name": "Italian Grand Prix",
+    "date": "1986-09-07",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1986_Italian_Grand_Prix"
+  },
+  {
+    "year": 1986,
+    "round": 14,
+    "name": "Portuguese Grand Prix",
+    "date": "1986-09-21",
+    "time": null,
+    "circuitId": "estoril",
+    "url": "https://en.wikipedia.org/wiki/1986_Portuguese_Grand_Prix"
+  },
+  {
+    "year": 1986,
+    "round": 15,
+    "name": "Mexican Grand Prix",
+    "date": "1986-10-12",
+    "time": null,
+    "circuitId": "rodriguez",
+    "url": "https://en.wikipedia.org/wiki/1986_Mexican_Grand_Prix"
+  },
+  {
+    "year": 1986,
+    "round": 16,
+    "name": "Australian Grand Prix",
+    "date": "1986-10-26",
+    "time": null,
+    "circuitId": "adelaide",
+    "url": "https://en.wikipedia.org/wiki/1986_Australian_Grand_Prix"
+  }
+]

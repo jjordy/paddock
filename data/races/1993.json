@@ -1,0 +1,146 @@
+[
+  {
+    "year": 1993,
+    "round": 1,
+    "name": "South African Grand Prix",
+    "date": "1993-03-14",
+    "time": null,
+    "circuitId": "kyalami",
+    "url": "https://en.wikipedia.org/wiki/1993_South_African_Grand_Prix"
+  },
+  {
+    "year": 1993,
+    "round": 2,
+    "name": "Brazilian Grand Prix",
+    "date": "1993-03-28",
+    "time": null,
+    "circuitId": "interlagos",
+    "url": "https://en.wikipedia.org/wiki/1993_Brazilian_Grand_Prix"
+  },
+  {
+    "year": 1993,
+    "round": 3,
+    "name": "European Grand Prix",
+    "date": "1993-04-11",
+    "time": null,
+    "circuitId": "donington",
+    "url": "https://en.wikipedia.org/wiki/1993_European_Grand_Prix"
+  },
+  {
+    "year": 1993,
+    "round": 4,
+    "name": "San Marino Grand Prix",
+    "date": "1993-04-25",
+    "time": null,
+    "circuitId": "imola",
+    "url": "https://en.wikipedia.org/wiki/1993_San_Marino_Grand_Prix"
+  },
+  {
+    "year": 1993,
+    "round": 5,
+    "name": "Spanish Grand Prix",
+    "date": "1993-05-09",
+    "time": null,
+    "circuitId": "catalunya",
+    "url": "https://en.wikipedia.org/wiki/1993_Spanish_Grand_Prix"
+  },
+  {
+    "year": 1993,
+    "round": 6,
+    "name": "Monaco Grand Prix",
+    "date": "1993-05-23",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1993_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1993,
+    "round": 7,
+    "name": "Canadian Grand Prix",
+    "date": "1993-06-13",
+    "time": null,
+    "circuitId": "villeneuve",
+    "url": "https://en.wikipedia.org/wiki/1993_Canadian_Grand_Prix"
+  },
+  {
+    "year": 1993,
+    "round": 8,
+    "name": "French Grand Prix",
+    "date": "1993-07-04",
+    "time": null,
+    "circuitId": "magny_cours",
+    "url": "https://en.wikipedia.org/wiki/1993_French_Grand_Prix"
+  },
+  {
+    "year": 1993,
+    "round": 9,
+    "name": "British Grand Prix",
+    "date": "1993-07-11",
+    "time": null,
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/1993_British_Grand_Prix"
+  },
+  {
+    "year": 1993,
+    "round": 10,
+    "name": "German Grand Prix",
+    "date": "1993-07-25",
+    "time": null,
+    "circuitId": "hockenheimring",
+    "url": "https://en.wikipedia.org/wiki/1993_German_Grand_Prix"
+  },
+  {
+    "year": 1993,
+    "round": 11,
+    "name": "Hungarian Grand Prix",
+    "date": "1993-08-15",
+    "time": null,
+    "circuitId": "hungaroring",
+    "url": "https://en.wikipedia.org/wiki/1993_Hungarian_Grand_Prix"
+  },
+  {
+    "year": 1993,
+    "round": 12,
+    "name": "Belgian Grand Prix",
+    "date": "1993-08-29",
+    "time": null,
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/1993_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1993,
+    "round": 13,
+    "name": "Italian Grand Prix",
+    "date": "1993-09-12",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1993_Italian_Grand_Prix"
+  },
+  {
+    "year": 1993,
+    "round": 14,
+    "name": "Portuguese Grand Prix",
+    "date": "1993-09-26",
+    "time": null,
+    "circuitId": "estoril",
+    "url": "https://en.wikipedia.org/wiki/1993_Portuguese_Grand_Prix"
+  },
+  {
+    "year": 1993,
+    "round": 15,
+    "name": "Japanese Grand Prix",
+    "date": "1993-10-24",
+    "time": null,
+    "circuitId": "suzuka",
+    "url": "https://en.wikipedia.org/wiki/1993_Japanese_Grand_Prix"
+  },
+  {
+    "year": 1993,
+    "round": 16,
+    "name": "Australian Grand Prix",
+    "date": "1993-11-07",
+    "time": null,
+    "circuitId": "adelaide",
+    "url": "https://en.wikipedia.org/wiki/1993_Australian_Grand_Prix"
+  }
+]

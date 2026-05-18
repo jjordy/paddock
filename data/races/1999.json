@@ -1,0 +1,146 @@
+[
+  {
+    "year": 1999,
+    "round": 1,
+    "name": "Australian Grand Prix",
+    "date": "1999-03-07",
+    "time": null,
+    "circuitId": "albert_park",
+    "url": "https://en.wikipedia.org/wiki/1999_Australian_Grand_Prix"
+  },
+  {
+    "year": 1999,
+    "round": 2,
+    "name": "Brazilian Grand Prix",
+    "date": "1999-04-11",
+    "time": null,
+    "circuitId": "interlagos",
+    "url": "https://en.wikipedia.org/wiki/1999_Brazilian_Grand_Prix"
+  },
+  {
+    "year": 1999,
+    "round": 3,
+    "name": "San Marino Grand Prix",
+    "date": "1999-05-02",
+    "time": null,
+    "circuitId": "imola",
+    "url": "https://en.wikipedia.org/wiki/1999_San_Marino_Grand_Prix"
+  },
+  {
+    "year": 1999,
+    "round": 4,
+    "name": "Monaco Grand Prix",
+    "date": "1999-05-16",
+    "time": null,
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/1999_Monaco_Grand_Prix"
+  },
+  {
+    "year": 1999,
+    "round": 5,
+    "name": "Spanish Grand Prix",
+    "date": "1999-05-30",
+    "time": null,
+    "circuitId": "catalunya",
+    "url": "https://en.wikipedia.org/wiki/1999_Spanish_Grand_Prix"
+  },
+  {
+    "year": 1999,
+    "round": 6,
+    "name": "Canadian Grand Prix",
+    "date": "1999-06-13",
+    "time": null,
+    "circuitId": "villeneuve",
+    "url": "https://en.wikipedia.org/wiki/1999_Canadian_Grand_Prix"
+  },
+  {
+    "year": 1999,
+    "round": 7,
+    "name": "French Grand Prix",
+    "date": "1999-06-27",
+    "time": null,
+    "circuitId": "magny_cours",
+    "url": "https://en.wikipedia.org/wiki/1999_French_Grand_Prix"
+  },
+  {
+    "year": 1999,
+    "round": 8,
+    "name": "British Grand Prix",
+    "date": "1999-07-11",
+    "time": null,
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/1999_British_Grand_Prix"
+  },
+  {
+    "year": 1999,
+    "round": 9,
+    "name": "Austrian Grand Prix",
+    "date": "1999-07-25",
+    "time": null,
+    "circuitId": "red_bull_ring",
+    "url": "https://en.wikipedia.org/wiki/1999_Austrian_Grand_Prix"
+  },
+  {
+    "year": 1999,
+    "round": 10,
+    "name": "German Grand Prix",
+    "date": "1999-08-01",
+    "time": null,
+    "circuitId": "hockenheimring",
+    "url": "https://en.wikipedia.org/wiki/1999_German_Grand_Prix"
+  },
+  {
+    "year": 1999,
+    "round": 11,
+    "name": "Hungarian Grand Prix",
+    "date": "1999-08-15",
+    "time": null,
+    "circuitId": "hungaroring",
+    "url": "https://en.wikipedia.org/wiki/1999_Hungarian_Grand_Prix"
+  },
+  {
+    "year": 1999,
+    "round": 12,
+    "name": "Belgian Grand Prix",
+    "date": "1999-08-29",
+    "time": null,
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/1999_Belgian_Grand_Prix"
+  },
+  {
+    "year": 1999,
+    "round": 13,
+    "name": "Italian Grand Prix",
+    "date": "1999-09-12",
+    "time": null,
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/1999_Italian_Grand_Prix"
+  },
+  {
+    "year": 1999,
+    "round": 14,
+    "name": "European Grand Prix",
+    "date": "1999-09-26",
+    "time": null,
+    "circuitId": "nurburgring",
+    "url": "https://en.wikipedia.org/wiki/1999_European_Grand_Prix"
+  },
+  {
+    "year": 1999,
+    "round": 15,
+    "name": "Malaysian Grand Prix",
+    "date": "1999-10-17",
+    "time": null,
+    "circuitId": "sepang",
+    "url": "https://en.wikipedia.org/wiki/1999_Malaysian_Grand_Prix"
+  },
+  {
+    "year": 1999,
+    "round": 16,
+    "name": "Japanese Grand Prix",
+    "date": "1999-10-31",
+    "time": null,
+    "circuitId": "suzuka",
+    "url": "https://en.wikipedia.org/wiki/1999_Japanese_Grand_Prix"
+  }
+]

@@ -1,0 +1,218 @@
+[
+  {
+    "year": 2024,
+    "round": 1,
+    "name": "Bahrain Grand Prix",
+    "date": "2024-03-02",
+    "time": "15:00:00Z",
+    "circuitId": "bahrain",
+    "url": "https://en.wikipedia.org/wiki/2024_Bahrain_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 2,
+    "name": "Saudi Arabian Grand Prix",
+    "date": "2024-03-09",
+    "time": "17:00:00Z",
+    "circuitId": "jeddah",
+    "url": "https://en.wikipedia.org/wiki/2024_Saudi_Arabian_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 3,
+    "name": "Australian Grand Prix",
+    "date": "2024-03-24",
+    "time": "04:00:00Z",
+    "circuitId": "albert_park",
+    "url": "https://en.wikipedia.org/wiki/2024_Australian_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 4,
+    "name": "Japanese Grand Prix",
+    "date": "2024-04-07",
+    "time": "05:00:00Z",
+    "circuitId": "suzuka",
+    "url": "https://en.wikipedia.org/wiki/2024_Japanese_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 5,
+    "name": "Chinese Grand Prix",
+    "date": "2024-04-21",
+    "time": "07:00:00Z",
+    "circuitId": "shanghai",
+    "url": "https://en.wikipedia.org/wiki/2024_Chinese_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 6,
+    "name": "Miami Grand Prix",
+    "date": "2024-05-05",
+    "time": "20:00:00Z",
+    "circuitId": "miami",
+    "url": "https://en.wikipedia.org/wiki/2024_Miami_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 7,
+    "name": "Emilia Romagna Grand Prix",
+    "date": "2024-05-19",
+    "time": "13:00:00Z",
+    "circuitId": "imola",
+    "url": "https://en.wikipedia.org/wiki/2024_Emilia_Romagna_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 8,
+    "name": "Monaco Grand Prix",
+    "date": "2024-05-26",
+    "time": "13:00:00Z",
+    "circuitId": "monaco",
+    "url": "https://en.wikipedia.org/wiki/2024_Monaco_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 9,
+    "name": "Canadian Grand Prix",
+    "date": "2024-06-09",
+    "time": "18:00:00Z",
+    "circuitId": "villeneuve",
+    "url": "https://en.wikipedia.org/wiki/2024_Canadian_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 10,
+    "name": "Spanish Grand Prix",
+    "date": "2024-06-23",
+    "time": "13:00:00Z",
+    "circuitId": "catalunya",
+    "url": "https://en.wikipedia.org/wiki/2024_Spanish_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 11,
+    "name": "Austrian Grand Prix",
+    "date": "2024-06-30",
+    "time": "13:00:00Z",
+    "circuitId": "red_bull_ring",
+    "url": "https://en.wikipedia.org/wiki/2024_Austrian_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 12,
+    "name": "British Grand Prix",
+    "date": "2024-07-07",
+    "time": "14:00:00Z",
+    "circuitId": "silverstone",
+    "url": "https://en.wikipedia.org/wiki/2024_British_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 13,
+    "name": "Hungarian Grand Prix",
+    "date": "2024-07-21",
+    "time": "13:00:00Z",
+    "circuitId": "hungaroring",
+    "url": "https://en.wikipedia.org/wiki/2024_Hungarian_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 14,
+    "name": "Belgian Grand Prix",
+    "date": "2024-07-28",
+    "time": "13:00:00Z",
+    "circuitId": "spa",
+    "url": "https://en.wikipedia.org/wiki/2024_Belgian_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 15,
+    "name": "Dutch Grand Prix",
+    "date": "2024-08-25",
+    "time": "13:00:00Z",
+    "circuitId": "zandvoort",
+    "url": "https://en.wikipedia.org/wiki/2024_Dutch_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 16,
+    "name": "Italian Grand Prix",
+    "date": "2024-09-01",
+    "time": "13:00:00Z",
+    "circuitId": "monza",
+    "url": "https://en.wikipedia.org/wiki/2024_Italian_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 17,
+    "name": "Azerbaijan Grand Prix",
+    "date": "2024-09-15",
+    "time": "11:00:00Z",
+    "circuitId": "baku",
+    "url": "https://en.wikipedia.org/wiki/2024_Azerbaijan_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 18,
+    "name": "Singapore Grand Prix",
+    "date": "2024-09-22",
+    "time": "12:00:00Z",
+    "circuitId": "marina_bay",
+    "url": "https://en.wikipedia.org/wiki/2024_Singapore_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 19,
+    "name": "United States Grand Prix",
+    "date": "2024-10-20",
+    "time": "19:00:00Z",
+    "circuitId": "americas",
+    "url": "https://en.wikipedia.org/wiki/2024_United_States_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 20,
+    "name": "Mexico City Grand Prix",
+    "date": "2024-10-27",
+    "time": "20:00:00Z",
+    "circuitId": "rodriguez",
+    "url": "https://en.wikipedia.org/wiki/2024_Mexico_City_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 21,
+    "name": "São Paulo Grand Prix",
+    "date": "2024-11-03",
+    "time": "17:00:00Z",
+    "circuitId": "interlagos",
+    "url": "https://en.wikipedia.org/wiki/2024_S%C3%A3o_Paulo_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 22,
+    "name": "Las Vegas Grand Prix",
+    "date": "2024-11-23",
+    "time": "06:00:00Z",
+    "circuitId": "vegas",
+    "url": "https://en.wikipedia.org/wiki/2024_Las_Vegas_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 23,
+    "name": "Qatar Grand Prix",
+    "date": "2024-12-01",
+    "time": "16:00:00Z",
+    "circuitId": "losail",
+    "url": "https://en.wikipedia.org/wiki/2024_Qatar_Grand_Prix"
+  },
+  {
+    "year": 2024,
+    "round": 24,
+    "name": "Abu Dhabi Grand Prix",
+    "date": "2024-12-08",
+    "time": "13:00:00Z",
+    "circuitId": "yas_marina",
+    "url": "https://en.wikipedia.org/wiki/2024_Abu_Dhabi_Grand_Prix"
+  }
+]
