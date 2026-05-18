@@ -1,9 +1,13 @@
-// <sparkline> — Tiny line chart for showing a single metric's shape
+// <paddock-spark> — Tiny line chart for showing a single metric's shape
 // across a sequence of points. No axes, no labels — just the curve
 // and dots at each data point. The Driver detail page uses one per
 // career metric (wins, podiums, points) to show season-over-season
-// evolution; future generic uses can also pass arbitrary numeric
-// series.
+// evolution; future generic uses can also pass arbitrary numeric series.
+//
+// Naming note: custom element names MUST contain a hyphen per the HTML
+// spec; "sparkline" alone fails both customElements.define() AND rogue's
+// auto-import (it only picks up kebab-case tags). Prefix-with-`paddock-`
+// keeps it short while staying valid.
 
 import { defineComponent } from '@jjordy/rogue'
 

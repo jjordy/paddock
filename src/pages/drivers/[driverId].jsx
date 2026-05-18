@@ -205,15 +205,15 @@ export default function DriverDetail({ data }) {
           <div class="evolution-grid">
             <div class="evolution-cell">
               <div class="evolution-label">Points / Season</div>
-              <sparkline values={JSON.stringify(pointsSeries)} color="#e10600"></sparkline>
+              <paddock-spark values={JSON.stringify(pointsSeries)} color="#e10600"></paddock-spark>
             </div>
             <div class="evolution-cell">
               <div class="evolution-label">Wins / Season</div>
-              <sparkline values={JSON.stringify(winsSeries)} color="#0a0a0a"></sparkline>
+              <paddock-spark values={JSON.stringify(winsSeries)} color="#0a0a0a"></paddock-spark>
             </div>
             <div class="evolution-cell">
               <div class="evolution-label">Podiums / Season</div>
-              <sparkline values={JSON.stringify(podiumsSeries)} color="#5a5a5a"></sparkline>
+              <paddock-spark values={JSON.stringify(podiumsSeries)} color="#5a5a5a"></paddock-spark>
             </div>
           </div>
         </>
