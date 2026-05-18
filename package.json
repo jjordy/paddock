@@ -1,0 +1,24 @@
+{
+  "name": "paddock",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "F1 stats dashboard built with @jjordy/rogue.",
+  "packageManager": "pnpm@10.15.1",
+  "pnpm": {
+    "onlyBuiltDependencies": []
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@jjordy/rogue": "^0.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "vite": "^5.4.0"
+  }
+}

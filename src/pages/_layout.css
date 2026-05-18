@@ -1,0 +1,116 @@
+/* Classic motorsport palette: Ferrari red on warm white + black. */
+:root {
+  --red: #e10600;
+  --red-dark: #b00500;
+  --ink: #0a0a0a;
+  --paper: #f7f3ec;       /* warm off-white, vintage poster */
+  --paper-dim: #ebe5d8;
+  --rule: #1a1a1a;
+  --muted: #5a5a5a;
+  --grey: #2a2a2a;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); }
+body {
+  font: 15px/1.55 ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--red); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code { font: 13px/1.4 ui-monospace, "SF Mono", Menlo, monospace; background: var(--paper-dim); padding: 1px 5px; border-radius: 3px; }
+
+.shell {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 64px 1fr;
+  grid-template-areas: "head head" "nav main";
+  min-height: 100vh;
+}
+
+header {
+  grid-area: head;
+  display: flex; align-items: center; gap: 16px;
+  padding: 0 24px;
+  background: var(--ink);
+  color: var(--paper);
+  border-bottom: 4px solid var(--red);
+}
+header .brand {
+  display: inline-flex; align-items: baseline; gap: 8px;
+  color: var(--paper);
+  font: 800 22px/1 "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: .02em;
+  text-transform: lowercase;
+}
+header .brand .mark {
+  display: inline-block;
+  width: 14px; height: 14px;
+  background: var(--red);
+  transform: skewX(-18deg);
+}
+header .tagline {
+  color: #c9c9c9;
+  font: 500 12px/1 ui-monospace, monospace;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+}
+
+aside {
+  grid-area: nav;
+  padding: 20px 12px;
+  border-right: 1px solid var(--paper-dim);
+  background: var(--paper);
+}
+aside .group { margin-bottom: 1.25rem; }
+aside .group-title {
+  font: 700 11px/1 ui-monospace, monospace;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--muted);
+  padding: 0 12px 8px;
+}
+aside ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 2px; }
+aside a {
+  display: block;
+  padding: 7px 12px;
+  border-radius: 4px;
+  color: var(--ink);
+  font-size: 14px;
+  border-left: 3px solid transparent;
+}
+aside a:hover { background: var(--paper-dim); text-decoration: none; }
+aside a.active {
+  background: var(--paper-dim);
+  border-left-color: var(--red);
+  color: var(--red-dark);
+  font-weight: 600;
+}
+
+main {
+  grid-area: main;
+  padding: 32px 40px;
+  max-width: 96ch;
+}
+main h1 {
+  font: 800 30px/1.15 "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -.01em;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+main h1::after {
+  content: "";
+  display: block;
+  width: 56px; height: 4px;
+  background: var(--red);
+  margin-top: 10px;
+}
+main h2 {
+  font: 700 18px/1.2 "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin: 2rem 0 .6rem;
+}
+main p { margin: .55em 0; }
+main p.lead { color: var(--grey); font-size: 16px; }
+main ul { padding-left: 1.2rem; }
