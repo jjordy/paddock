@@ -316,6 +316,12 @@ const RESULTS_SYNC_YEARS: number[] = [2024, 2025, 2026]
 // final-only standings (one request per Round), so it's gated separately.
 const ROUND_STANDINGS_SYNC_YEARS: number[] = [2024, 2025, 2026]
 
+// Years for which we sync per-Lap timing — the data the lap-time-chart
+// and position-chart components on /races/[year]/[round] consume. The
+// heaviest endpoint (one Race × ~60 Laps × ~20 Drivers = ~1200 rows,
+// often paginated) so gated separately and intentionally narrow.
+const LAPS_SYNC_YEARS: number[] = [2025, 2026]
+
 async function syncResultsForRace(year: number, round: number): Promise<boolean> {
   const raw = await fetchAll<any>(
     `${year}/${round}/results`,
@@ -367,6 +373,71 @@ async function loadRacesForSeason(year: number): Promise<Race[]> {
   } catch (err: any) {
     if (err.code === 'ENOENT') return []
     throw err
+  }
+}
+
+// ============================================================
+// Per-Race Lap timings — every Lap of every Driver in a Race. Powers
+// the lap-time scatter and the iconic position-evolution chart on
+// /races/[year]/[round]. Ergast returns this as one entry per Lap with
+// embedded Timings per Driver; we transpose into per-Driver series so
+// each chart can pull one Driver's curve in a single iteration.
+// ============================================================
+
+function parseTimeMs(s: string): number {
+  // "1:23.456" → 83456 ms. "23.456" → 23456 ms.
+  const parts = s.split(':')
+  if (parts.length === 2) {
+    return Math.round(Number(parts[0]) * 60000 + Number(parts[1]) * 1000)
+  }
+  return Math.round(Number(parts[0]) * 1000)
+}
+
+async function syncLapsForRace(year: number, round: number): Promise<boolean> {
+  const raw = await fetchAll<any>(
+    `${year}/${round}/laps`,
+    p => p.MRData.RaceTable.Races[0]?.Laps ?? [],
+  )
+
+  // Transpose Ergast's per-Lap-with-embedded-Timings shape into one
+  // series per Driver. Drivers who retire mid-race get a shorter series.
+  const byDriver = new Map<string, Array<{ lap: number; time: string; position: number; ms: number }>>()
+  for (const lap of raw) {
+    const lapNum = Number(lap.number)
+    for (const t of lap.Timings ?? []) {
+      let s = byDriver.get(t.driverId)
+      if (!s) { s = []; byDriver.set(t.driverId, s) }
+      s.push({
+        lap: lapNum,
+        time: t.time,
+        position: Number(t.position),
+        ms: parseTimeMs(t.time),
+      })
+    }
+  }
+  const drivers = [...byDriver.entries()].map(([driverId, series]) => ({
+    driverId,
+    series,
+  }))
+  return writeIfChanged(
+    join(DATA_DIR, 'laps', String(year), `${round}.json`),
+    { drivers },
+  )
+}
+
+async function syncAllLaps(): Promise<void> {
+  for (const year of LAPS_SYNC_YEARS) {
+    process.stdout.write(`  laps ${year}     ... `)
+    const races = await loadRacesForSeason(year)
+    if (races.length === 0) {
+      console.log('no races — skipping')
+      continue
+    }
+    let changed = 0
+    for (const r of races) {
+      if (await syncLapsForRace(r.year, r.round)) changed++
+    }
+    console.log(`${races.length} races (${changed} updated)`)
   }
 }
 
@@ -520,6 +591,9 @@ async function main() {
   }
   if (ONLY == null || ONLY === 'round-standings') {
     await syncAllRoundStandings()
+  }
+  if (ONLY == null || ONLY === 'laps') {
+    await syncAllLaps()
   }
   console.log('Done.')
 }

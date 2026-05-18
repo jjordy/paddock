@@ -32,6 +32,7 @@ export const loader = async ({ params }) => {
   // would bloat every race's payload by ~250 KB. The trimmed row carries
   // only what the page renders.
   let results = null
+  let finalOrder = []
   if (rawResults) {
     const drivers = await loadJson('data/drivers.json')
     const constructors = await loadJson('data/constructors.json')
@@ -53,9 +54,24 @@ export const loader = async ({ params }) => {
         status: r.status,
       }
     })
+    // Final classification order — used by the charts to pick which top-N
+    // Drivers get distinct colors instead of the pale-grey wash.
+    finalOrder = rawResults
+      .filter((r) => r.position != null)
+      .sort((a, b) => a.position - b.position)
+      .map((r) => r.driverId)
   }
 
-  return { race, results }
+  // Per-Lap timings — heavy. Only synced for recent Seasons; missing
+  // file is fine, the chart components render a graceful placeholder.
+  let laps = null
+  try {
+    laps = await loadJson(`data/laps/${year}/${round}.json`)
+  } catch (err) {
+    if (err.code !== 'ENOENT') throw err
+  }
+
+  return { race, results, laps, finalOrder }
 }
 
 export default function RaceDetail({ data }) {
@@ -67,7 +83,7 @@ export default function RaceDetail({ data }) {
       </div>
     )
   }
-  const { race, results } = data
+  const { race, results, laps, finalOrder } = data
   return (
     <div>
       <h1>{race.name}</h1>
@@ -136,6 +152,16 @@ export default function RaceDetail({ data }) {
             ))}
           </tbody>
         </table>
+      )}
+
+      {laps && laps.drivers && laps.drivers.length > 0 && (
+        <>
+          <h2>Position evolution</h2>
+          <position-chart data={JSON.stringify(laps)} finalOrder={JSON.stringify(finalOrder)}></position-chart>
+
+          <h2>Lap times</h2>
+          <lap-time-chart data={JSON.stringify(laps)} finalOrder={JSON.stringify(finalOrder)}></lap-time-chart>
+        </>
       )}
     </div>
   )
