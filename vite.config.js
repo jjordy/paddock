@@ -29,6 +29,29 @@ const fixNestedDynamicRoutes = () => ({
   },
 })
 
+// Workaround for jjordy/rogue's loader-fetch bug: rogue 0.7.0 only emits
+// `static: true` for routes that export `staticPaths`. Pages like
+// `/teams.jsx` or `/records.jsx` (no dynamic segments → no staticPaths)
+// fall through to content-neg fetch — `fetch(/teams, Accept: JSON)` —
+// which returns 404 on dumb static hosts (vite preview, GH Pages).
+// The 404 throws inside the view transition's `update` callback, the
+// transition aborts on its 4s DOM-update timeout, and the SPA-nav never
+// renders. Paddock SSGs every route, so `<url>/data.json` is always on
+// disk — force `static: true` on every entry. Filed upstream against
+// jjordy/rogue; remove when fixed.
+const forceStaticRoutes = () => ({
+  name: 'paddock:force-static-routes',
+  enforce: 'post',
+  transform(code, id) {
+    if (!id.includes('virtual:jsx-wc/routes')) return null
+    // The closing `] },` (or `]},`) at the end of a route entry only
+    // appears when `static: true` is absent — entries that already have
+    // it look like `], static: true },`. Single regex is safe.
+    const next = code.replace(/\]\s*\},/g, '], static: true },')
+    return next === code ? null : { code: next, map: null }
+  },
+})
+
 // Static-flagged routes in rogue 0.7.0 fetch `${url}/data.json` in BOTH
 // production (where SSG emitted the file) and dev (where it didn't).
 // rogueSsr's middleware only handles `Accept: application/json` and
@@ -64,6 +87,6 @@ export default defineConfig({
   base: process.env.BASE_PATH || '/',
   // Order matters: devDataJsonShim rewrites the URL BEFORE rogueSsr sees
   // it, so rogueSsr's existing Accept: JSON branch handles the response.
-  plugins: [rogue(), rogueRouter(), devDataJsonShim(), rogueSsr(), fixNestedDynamicRoutes()],
+  plugins: [rogue(), rogueRouter(), devDataJsonShim(), rogueSsr(), fixNestedDynamicRoutes(), forceStaticRoutes()],
   esbuild: { jsx: 'preserve' },
 })

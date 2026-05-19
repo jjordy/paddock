@@ -19,3 +19,28 @@ index f2ccadd3da853c41b9ff81de3b5a2f83d6b7c610..547412d2c4677b701aafc224a025119d
    const headers = isStatic ? {} : { accept: 'application/json' }
    const res = await fetch(fetchUrl, { headers, credentials: 'same-origin' })
    if (!res.ok) {
+diff --git a/runtime/router-view-transitions.js b/runtime/router-view-transitions.js
+index 9f7a90d650c039f49334230c52b8d819350656f0..bb7364a8f954aa6ed147c87c34515c58cd26d52e 100644
+--- a/runtime/router-view-transitions.js
++++ b/runtime/router-view-transitions.js
+@@ -15,6 +15,18 @@ export async function wrapWithViewTransition(doc, update, opts = {}) {
+     return
+   }
+
+-  const viewTransition = doc.startViewTransition({ update, types: opts.types || [] })
+-  await viewTransition.finished
++  // PADDOCK PATCH: startViewTransition can abort with the DOM update
++  // still pending (transition timeout, conflicting view-transition-name,
++  // etc.). When that happens, the SPA-nav target page never renders.
++  // Track whether the update callback actually ran inside the transition;
++  // if the transition rejects without running it, run it directly so the
++  // page content gets applied. Filed upstream against jjordy/rogue.
++  let updateRan = false
++  const wrappedUpdate = async () => { updateRan = true; await update() }
++  try {
++    const viewTransition = doc.startViewTransition({ update: wrappedUpdate, types: opts.types || [] })
++    await viewTransition.finished
++  } catch {
++    if (!updateRan) await update()
++  }
+ }
