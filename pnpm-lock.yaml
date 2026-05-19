@@ -6,7 +6,7 @@ settings:
 
 patchedDependencies:
   '@jjordy/rogue':
-    hash: 3ad0eae1d5877c2f362b22ffb62b8633848a63ea7ac22e22d08b66dc4c5f1d98
+    hash: 1bb79faa41e4ba5e55bbfd021f4b85b7a8896687d236f1ec927fac88ee9818e4
     path: patches/@jjordy__rogue.patch
 
 importers:
@@ -15,7 +15,7 @@ importers:
     dependencies:
       '@jjordy/rogue':
         specifier: ^0.7.0
-        version: 0.7.0(patch_hash=3ad0eae1d5877c2f362b22ffb62b8633848a63ea7ac22e22d08b66dc4c5f1d98)(vite@5.4.21(@types/node@25.8.0))
+        version: 0.7.0(patch_hash=1bb79faa41e4ba5e55bbfd021f4b85b7a8896687d236f1ec927fac88ee9818e4)(vite@5.4.21(@types/node@25.8.0))
     devDependencies:
       '@types/node':
         specifier: ^25.8.0
@@ -769,7 +769,7 @@ snapshots:
   '@esbuild/win32-x64@0.28.0':
     optional: true
 
-  '@jjordy/rogue@0.7.0(patch_hash=3ad0eae1d5877c2f362b22ffb62b8633848a63ea7ac22e22d08b66dc4c5f1d98)(vite@5.4.21(@types/node@25.8.0))':
+  '@jjordy/rogue@0.7.0(patch_hash=1bb79faa41e4ba5e55bbfd021f4b85b7a8896687d236f1ec927fac88ee9818e4)(vite@5.4.21(@types/node@25.8.0))':
     dependencies:
       acorn: 8.16.0
       acorn-jsx: 5.3.2(acorn@8.16.0)

@@ -453,7 +453,7 @@ async function syncAllLaps(): Promise<void> {
 async function syncRoundStandingsForYear(year: number): Promise<boolean> {
   const races = await loadRacesForSeason(year)
   if (races.length === 0) return false
-  const rounds = []
+  const rounds: { round: number; drivers: any[] }[] = []
   for (const race of races) {
     // Skip future rounds — they have no standings yet, and the endpoint
     // returns the most recent prior standings, which would duplicate.

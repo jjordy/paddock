@@ -42,10 +42,12 @@ export const loader = async ({ params }) => {
       const d = driversById.get(r.driverId)
       const c = constructorsById.get(r.constructorId)
       return {
+        position: r.position,
         positionText: r.positionText,
         points: r.points,
         driverId: r.driverId,
         driverName: d ? `${d.givenName} ${d.familyName}` : r.driverId,
+        driverCode: d?.code ?? null,
         constructorId: r.constructorId,
         constructorName: c ? c.name : r.constructorId,
         grid: r.grid,
@@ -158,13 +160,26 @@ export default function RaceDetail({ data }) {
         </table>
       )}
 
-      {laps && laps.drivers && laps.drivers.length > 0 && (
+      {results && results.length > 0 && (
+        <>
+          <h2>Grid vs finish</h2>
+          <grid-vs-finish data={JSON.stringify(results.map((r) => ({
+            driverId: r.driverId,
+            driverName: r.driverName,
+            driverCode: r.driverCode,
+            grid: r.grid,
+            position: r.position,
+          })))}></grid-vs-finish>
+        </>
+      )}
+
+      {results && results.length > 0 && (
         <>
           <h2>Position evolution</h2>
-          <position-chart data={JSON.stringify(laps)} finalOrder={JSON.stringify(finalOrder)}></position-chart>
+          <position-chart data={JSON.stringify(laps ?? {})} finalOrder={JSON.stringify(finalOrder)}></position-chart>
 
           <h2>Lap times</h2>
-          <lap-time-chart data={JSON.stringify(laps)} finalOrder={JSON.stringify(finalOrder)}></lap-time-chart>
+          <lap-time-chart data={JSON.stringify(laps ?? {})} finalOrder={JSON.stringify(finalOrder)}></lap-time-chart>
         </>
       )}
     </div>
